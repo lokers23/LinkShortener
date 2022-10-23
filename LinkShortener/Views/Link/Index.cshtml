@@ -1,0 +1,31 @@
+﻿@model List<LinkShortener.DAL.Models.Link>
+
+@{
+    ViewBag.Title = "Таблица ссылок";
+    Layout = "_Layout";
+}
+
+<h2 class="mb-5">Сокрощатель ссылок URL</h2>
+<a asp-action="Save" class="btn btn-warning fw-bolder">Создать</a>
+<table class="table border-1">
+    <tr>
+        <th>Длинный URL</th>
+        <th>Сокращенный URL</th>
+        <th>Дата создания</th>
+        <th>Количество переходов</th>
+        <th></th>
+    </tr>
+    @foreach (var link in Model)
+    {
+        <tr>
+            <td>@link.LongUrl</td>
+            <td><a href="@link.ShortUrl">@link.ShortUrl</a></td>
+            <td>@link.DateCreate</td>
+            <td>@link.CountClick</td>
+            <td>
+                <a asp-action="Save" asp-route-id="@link.Id" class="btn btn-secondary fw-bolder">Редактировать</a>
+                <a asp-action="Delete" asp-route-id="@link.Id" class="btn btn-danger fw-bolder">Удалить</a>
+            </td>
+        </tr>
+    }
+</table>

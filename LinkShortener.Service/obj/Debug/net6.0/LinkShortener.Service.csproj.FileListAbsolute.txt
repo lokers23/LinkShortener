@@ -1,0 +1,17 @@
+F:\ShortUrlApp\LinkShortener\LinkShortener.Service\bin\Debug\net6.0\LinkShortener.Service.deps.json
+F:\ShortUrlApp\LinkShortener\LinkShortener.Service\bin\Debug\net6.0\LinkShortener.Service.dll
+F:\ShortUrlApp\LinkShortener\LinkShortener.Service\bin\Debug\net6.0\LinkShortener.Service.pdb
+F:\ShortUrlApp\LinkShortener\LinkShortener.Service\bin\Debug\net6.0\LinkShortener.DAL.dll
+F:\ShortUrlApp\LinkShortener\LinkShortener.Service\bin\Debug\net6.0\LinkShortener.DAL.pdb
+F:\ShortUrlApp\LinkShortener\LinkShortener.Service\obj\Debug\net6.0\LinkShortener.Service.csproj.AssemblyReference.cache
+F:\ShortUrlApp\LinkShortener\LinkShortener.Service\obj\Debug\net6.0\LinkShortener.Service.GeneratedMSBuildEditorConfig.editorconfig
+F:\ShortUrlApp\LinkShortener\LinkShortener.Service\obj\Debug\net6.0\LinkShortener.Service.AssemblyInfoInputs.cache
+F:\ShortUrlApp\LinkShortener\LinkShortener.Service\obj\Debug\net6.0\LinkShortener.Service.AssemblyInfo.cs
+F:\ShortUrlApp\LinkShortener\LinkShortener.Service\obj\Debug\net6.0\LinkShortener.Service.csproj.CoreCompileInputs.cache
+F:\ShortUrlApp\LinkShortener\LinkShortener.Service\obj\Debug\net6.0\LinkShortener.Service.csproj.CopyComplete
+F:\ShortUrlApp\LinkShortener\LinkShortener.Service\obj\Debug\net6.0\LinkShortener.Service.dll
+F:\ShortUrlApp\LinkShortener\LinkShortener.Service\obj\Debug\net6.0\refint\LinkShortener.Service.dll
+F:\ShortUrlApp\LinkShortener\LinkShortener.Service\obj\Debug\net6.0\LinkShortener.Service.pdb
+F:\ShortUrlApp\LinkShortener\LinkShortener.Service\obj\Debug\net6.0\ref\LinkShortener.Service.dll
+F:\ShortUrlApp\LinkShortener\LinkShortener.Service\bin\Debug\net6.0\LinkShortener.Service.runtimeconfig.json
+F:\ShortUrlApp\LinkShortener\LinkShortener.Service\obj\Debug\net6.0\LinkShortener.Service.genruntimeconfig.cache

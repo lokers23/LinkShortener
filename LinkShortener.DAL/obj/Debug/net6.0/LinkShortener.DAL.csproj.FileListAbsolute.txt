@@ -1,0 +1,14 @@
+F:\ShortUrlApp\LinkShortener\LinkShortener.DAL\bin\Debug\net6.0\LinkShortener.DAL.deps.json
+F:\ShortUrlApp\LinkShortener\LinkShortener.DAL\bin\Debug\net6.0\LinkShortener.DAL.runtimeconfig.json
+F:\ShortUrlApp\LinkShortener\LinkShortener.DAL\bin\Debug\net6.0\LinkShortener.DAL.dll
+F:\ShortUrlApp\LinkShortener\LinkShortener.DAL\bin\Debug\net6.0\LinkShortener.DAL.pdb
+F:\ShortUrlApp\LinkShortener\LinkShortener.DAL\obj\Debug\net6.0\LinkShortener.DAL.csproj.AssemblyReference.cache
+F:\ShortUrlApp\LinkShortener\LinkShortener.DAL\obj\Debug\net6.0\LinkShortener.DAL.GeneratedMSBuildEditorConfig.editorconfig
+F:\ShortUrlApp\LinkShortener\LinkShortener.DAL\obj\Debug\net6.0\LinkShortener.DAL.AssemblyInfoInputs.cache
+F:\ShortUrlApp\LinkShortener\LinkShortener.DAL\obj\Debug\net6.0\LinkShortener.DAL.AssemblyInfo.cs
+F:\ShortUrlApp\LinkShortener\LinkShortener.DAL\obj\Debug\net6.0\LinkShortener.DAL.csproj.CoreCompileInputs.cache
+F:\ShortUrlApp\LinkShortener\LinkShortener.DAL\obj\Debug\net6.0\LinkShortener.DAL.dll
+F:\ShortUrlApp\LinkShortener\LinkShortener.DAL\obj\Debug\net6.0\refint\LinkShortener.DAL.dll
+F:\ShortUrlApp\LinkShortener\LinkShortener.DAL\obj\Debug\net6.0\LinkShortener.DAL.pdb
+F:\ShortUrlApp\LinkShortener\LinkShortener.DAL\obj\Debug\net6.0\LinkShortener.DAL.genruntimeconfig.cache
+F:\ShortUrlApp\LinkShortener\LinkShortener.DAL\obj\Debug\net6.0\ref\LinkShortener.DAL.dll

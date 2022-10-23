@@ -1,0 +1,28 @@
+﻿@model LinkShortener.DAL.ViewModels.LongUrlViewModel
+
+@{
+    ViewBag.Title = Model.Id == 0 ? "Создание" : "Редактирование";
+    Layout = "_Layout";
+}
+
+<h2 class="mb-5">@ViewBag.Title</h2>
+<form method="post">
+    <div>
+        <input type="hidden" name="Id" value="@Model.Id"/>
+    </div>
+    <div>
+        <label class="form-label fs-4 fw-bolder">Полная ссылка</label>
+        <input class="w-100 mb-2 input-group" name="longUrl" type="text" required="required" placeholder="Введите ссылку, чтобы сократить её" value="@Model.LongUrl"/>
+        <span asp-validation-for="LongUrl" class="fs-5 text-danger"></span>
+    </div>
+    <dv>
+        <input type="hidden" name="ShortUrl" value="@Model.ShortUrl"/>
+    </dv>
+    <dv>
+        <input type="hidden" name="DateCreate" value="@Model.DateCreate"/>
+    </dv>
+    <dv>
+        <input type="hidden" name="CountClick" value="@Model.CountClick"/>
+    </dv>
+    <button class="btn btn-secondary fw-bolder" type="submit">Сократить</button>
+</form>
