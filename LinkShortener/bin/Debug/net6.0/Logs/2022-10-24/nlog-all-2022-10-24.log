@@ -1,0 +1,547 @@
+2022-10-24 13:54:33.7369|10409|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An additional 'IServiceProvider' was created for internal use by Entity Framework. An existing service provider was not used due to the following configuration changes: configuration added for 'MySQL:CharSet'. 
+2022-10-24 13:54:34.9764|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 5.0.17 initialized 'ShortLinkDbContext' using provider 'MySql.EntityFrameworkCore' with options: None 
+2022-10-24 13:54:35.0049|20400|DEBUG|Microsoft.EntityFrameworkCore.Migrations|Migrating using database 'shortlinkdb' on server 'localhost'. 
+2022-10-24 13:54:35.5058|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteScalar'. 
+2022-10-24 13:54:35.5058|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteScalar' (8ms). 
+2022-10-24 13:54:35.5276|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'shortlinkdb' on server 'localhost'. 
+2022-10-24 13:54:35.5428|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'shortlinkdb' on server 'localhost'. 
+2022-10-24 13:54:35.5580|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='shortlinkdb' AND TABLE_NAME='__EFMigrationsHistory'; 
+2022-10-24 13:54:35.5580|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='shortlinkdb' AND TABLE_NAME='__EFMigrationsHistory'; 
+2022-10-24 13:54:35.5757|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'shortlinkdb' on server 'localhost'. 
+2022-10-24 13:54:35.5757|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'shortlinkdb' on server 'localhost'. 
+2022-10-24 13:54:35.5875|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteScalar'. 
+2022-10-24 13:54:35.5875|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteScalar' (0ms). 
+2022-10-24 13:54:35.5875|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'shortlinkdb' on server 'localhost'. 
+2022-10-24 13:54:35.5875|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'shortlinkdb' on server 'localhost'. 
+2022-10-24 13:54:35.5875|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='shortlinkdb' AND TABLE_NAME='__EFMigrationsHistory'; 
+2022-10-24 13:54:35.5875|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='shortlinkdb' AND TABLE_NAME='__EFMigrationsHistory'; 
+2022-10-24 13:54:35.5875|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'shortlinkdb' on server 'localhost'. 
+2022-10-24 13:54:35.5875|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'shortlinkdb' on server 'localhost'. 
+2022-10-24 13:54:35.6170|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-10-24 13:54:35.6170|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2022-10-24 13:54:35.6170|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'shortlinkdb' on server 'localhost'. 
+2022-10-24 13:54:35.6170|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'shortlinkdb' on server 'localhost'. 
+2022-10-24 13:54:35.6170|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`; 
+2022-10-24 13:54:35.6170|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`; 
+2022-10-24 13:54:35.6282|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2022-10-24 13:54:35.6282|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'shortlinkdb' on server 'localhost'. 
+2022-10-24 13:54:35.6282|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'shortlinkdb' on server 'localhost'. 
+2022-10-24 13:54:35.6586|20405|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date. 
+2022-10-24 13:54:35.6586|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ShortLinkDbContext' disposed. 
+2022-10-24 13:54:35.6999|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Link/Index.cshtml'. 
+2022-10-24 13:54:35.6999|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Link/Save.cshtml'. 
+2022-10-24 13:54:35.6999|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Shared/Error.cshtml'. 
+2022-10-24 13:54:35.6999|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Shared/_ValidationScriptsPartial.cshtml'. 
+2022-10-24 13:54:35.6999|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/_ViewImports.cshtml'. 
+2022-10-24 13:54:35.6999|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/_ViewStart.cshtml'. 
+2022-10-24 13:54:35.6999|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Shared/_Layout.cshtml'. 
+2022-10-24 13:54:35.7203|12|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2022-10-24 13:54:35.7927|1|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2022-10-24 13:54:35.8250|63|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Lokers\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2022-10-24 13:54:35.8343|37|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\Lokers\AppData\Local\ASP.NET\DataProtection-Keys\key-055ebec0-6d92-43a9-8ce4-ecd0cb2d8332.xml'. 
+2022-10-24 13:54:35.8343|37|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\Lokers\AppData\Local\ASP.NET\DataProtection-Keys\key-23409029-c358-4d7d-89b6-549d95b4667c.xml'. 
+2022-10-24 13:54:35.8464|18|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {055ebec0-6d92-43a9-8ce4-ecd0cb2d8332}. 
+2022-10-24 13:54:35.8464|18|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {23409029-c358-4d7d-89b6-549d95b4667c}. 
+2022-10-24 13:54:35.8674|13|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {23409029-c358-4d7d-89b6-549d95b4667c} with expiration date 2022-11-20 13:38:10Z as default key. 
+2022-10-24 13:54:35.8674|0|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2022-10-24 13:54:35.8674|51|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI. 
+2022-10-24 13:54:35.8726|0|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2022-10-24 13:54:35.8726|4|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC. 
+2022-10-24 13:54:35.8726|3|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC. 
+2022-10-24 13:54:35.8726|2|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {23409029-c358-4d7d-89b6-549d95b4667c} as the default key. 
+2022-10-24 13:54:35.8726|65|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {23409029-c358-4d7d-89b6-549d95b4667c} was loaded during application startup. 
+2022-10-24 13:54:35.9431|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: 68571EEA0C1BD2CA1D1FC31A140ECE259117DD9D) 
+2022-10-24 13:54:35.9946|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7288 
+2022-10-24 13:54:36.0184|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5288 
+2022-10-24 13:54:36.0184|13|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly LinkShortener 
+2022-10-24 13:54:36.0184|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-10-24 13:54:36.0184|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-10-24 13:54:36.0184|0|INFO|Microsoft.Hosting.Lifetime|Content root path: F:\ShortUrlApp\LinkShortener\LinkShortener\ 
+2022-10-24 13:54:36.0184|2|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2022-10-24 13:54:36.3003|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMLLLOI3I0UQ" received FIN. 
+2022-10-24 13:54:36.3226|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMLLLOI3I0UQ" accepted. 
+2022-10-24 13:54:36.3226|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMLLLOI3I0UQ" started. 
+2022-10-24 13:54:36.3618|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-10-24 13:54:36.4147|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMLLLOI3I0UQ" stopped. 
+2022-10-24 13:54:36.4147|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMLLLOI3I0UQ" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2022-10-24 13:54:36.8356|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMLLLOI3I0UR" accepted. 
+2022-10-24 13:54:36.8475|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMLLLOI3I0UR" started. 
+2022-10-24 13:54:36.9969|3|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMLLLOI3I0UR established using the following protocol: Tls12 
+2022-10-24 13:54:37.0329|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" sending SETTINGS frame for stream ID 0 with length 18 and flags NONE. 
+2022-10-24 13:54:37.0382|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" sending WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2022-10-24 13:54:37.0382|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" received SETTINGS frame for stream ID 0 with length 18 and flags NONE. 
+2022-10-24 13:54:37.0382|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" sending SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2022-10-24 13:54:37.0382|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2022-10-24 13:54:37.0382|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" received PRIORITY frame for stream ID 3 with length 5 and flags 0x0. 
+2022-10-24 13:54:37.0382|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" received PRIORITY frame for stream ID 5 with length 5 and flags 0x0. 
+2022-10-24 13:54:37.0382|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" received PRIORITY frame for stream ID 7 with length 5 and flags 0x0. 
+2022-10-24 13:54:37.0382|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" received PRIORITY frame for stream ID 9 with length 5 and flags 0x0. 
+2022-10-24 13:54:37.0382|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" received PRIORITY frame for stream ID 11 with length 5 and flags 0x0. 
+2022-10-24 13:54:37.0382|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" received PRIORITY frame for stream ID 13 with length 5 and flags 0x0. 
+2022-10-24 13:54:37.0382|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" received HEADERS frame for stream ID 15 with length 313 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2022-10-24 13:54:37.1095|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" received WINDOW_UPDATE frame for stream ID 15 with length 4 and flags 0x0. 
+2022-10-24 13:54:37.1095|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" received SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2022-10-24 13:54:37.1341|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7288/ - - 
+2022-10-24 13:54:37.1341|0|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2022-10-24 13:54:37.1341|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-10-24 13:54:37.1425|4|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path / does not match a supported file type 
+2022-10-24 13:54:37.2104|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/' 
+2022-10-24 13:54:37.2104|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'LinkShortener.Controllers.LinkController.Index (LinkShortener)' with route pattern '{controller=Link}/{action=Index}/{id?}' is valid for the request path '/' 
+2022-10-24 13:54:37.2104|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'LinkShortener.Controllers.LinkController.Index (LinkShortener)' 
+2022-10-24 13:54:37.2104|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'LinkShortener.Controllers.LinkController.Index (LinkShortener)' 
+2022-10-24 13:54:37.2502|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Index", controller = "Link"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller LinkShortener.Controllers.LinkController (LinkShortener). 
+2022-10-24 13:54:37.2502|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2022-10-24 13:54:37.2502|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2022-10-24 13:54:37.2502|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648), Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000) 
+2022-10-24 13:54:37.2502|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2022-10-24 13:54:37.2502|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2022-10-24 13:54:37.2502|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: Before executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-10-24 13:54:37.2502|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: After executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-10-24 13:54:37.2502|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller LinkShortener.Controllers.LinkController (LinkShortener) 
+2022-10-24 13:54:37.2502|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller LinkShortener.Controllers.LinkController (LinkShortener) 
+2022-10-24 13:54:37.2502|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2022-10-24 13:54:37.2502|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-10-24 13:54:37.2502|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-10-24 13:54:37.2686|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method LinkShortener.Controllers.LinkController.Index (LinkShortener) - Validation state: Valid 
+2022-10-24 13:54:37.2911|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 5.0.17 initialized 'ShortLinkDbContext' using provider 'MySql.EntityFrameworkCore' with options: None 
+2022-10-24 13:54:37.3591|10111|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<Link>()' 
+2022-10-24 13:54:37.8059|10107|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Link>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Link.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Link.CountClick (int) Required, 1], [Property: Link.DateCreate (DateTime) Required, 2], [Property: Link.LongUrl (string) Required, 3], [Property: Link.ShortUrl (string) Required, 4], }
+        SELECT l.Id, l.CountClick, l.DateCreate, l.LongUrl, l.ShortUrl
+        FROM links AS l), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Link>, 
+    LinkShortener.DAL.ShortLinkDbContext, 
+    False, 
+    False
+)' 
+2022-10-24 13:54:37.8745|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-10-24 13:54:37.8745|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2022-10-24 13:54:37.8804|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'shortlinkdb' on server 'localhost'. 
+2022-10-24 13:54:37.8804|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'shortlinkdb' on server 'localhost'. 
+2022-10-24 13:54:37.8804|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `l`.`Id`, `l`.`CountClick`, `l`.`DateCreate`, `l`.`LongUrl`, `l`.`ShortUrl`
+FROM `links` AS `l` 
+2022-10-24 13:54:37.8804|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `l`.`Id`, `l`.`CountClick`, `l`.`DateCreate`, `l`.`LongUrl`, `l`.`ShortUrl`
+FROM `links` AS `l` 
+2022-10-24 13:54:37.9529|10806|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShortLinkDbContext' started tracking 'Link' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-10-24 13:54:38.0253|10806|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShortLinkDbContext' started tracking 'Link' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-10-24 13:54:38.0287|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2022-10-24 13:54:38.0287|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'shortlinkdb' on server 'localhost'. 
+2022-10-24 13:54:38.0287|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'shortlinkdb' on server 'localhost'. 
+2022-10-24 13:54:38.0287|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method LinkShortener.Controllers.LinkController.Index (LinkShortener), returned result Microsoft.AspNetCore.Mvc.ViewResult in 764.5371ms. 
+2022-10-24 13:54:38.0287|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-10-24 13:54:38.0287|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-10-24 13:54:38.0287|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2022-10-24 13:54:38.0420|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-10-24 13:54:38.0420|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-10-24 13:54:38.0420|4|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.ViewResult. 
+2022-10-24 13:54:38.0420|1|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache miss for view 'Index' in controller 'Link'. 
+2022-10-24 13:54:38.0420|5|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Located compiled view for view at path '/Views/Link/Index.cshtml'. 
+2022-10-24 13:54:38.0508|7|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Could not find a file for view at path '/Views/Link/_ViewStart.cshtml'. 
+2022-10-24 13:54:38.0508|5|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Located compiled view for view at path '/Views/_ViewStart.cshtml'. 
+2022-10-24 13:54:38.0508|7|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Could not find a file for view at path '/_ViewStart.cshtml'. 
+2022-10-24 13:54:38.0508|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2022-10-24 13:54:38.0508|2|DEBUG|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|The view path '/Views/Link/Index.cshtml' was found in 9.7531ms. 
+2022-10-24 13:54:38.5181|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Link}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-10-24 13:54:38.5476|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Link}/{action=Index}/{id?} for Route: {controller=Link}/{action=Index}/{id?} resulting in /Link/Save and  
+2022-10-24 13:54:38.5476|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Link}/{action=Index}/{id?} with result /Link/Save 
+2022-10-24 13:54:38.5679|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Link}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-10-24 13:54:38.5679|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Link}/{action=Index}/{id?} for Route: {controller=Link}/{action=Index}/{id?} resulting in /Link/Save/2 and  
+2022-10-24 13:54:38.5679|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Link}/{action=Index}/{id?} with result /Link/Save/2 
+2022-10-24 13:54:38.5679|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Link}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-10-24 13:54:38.5679|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Link}/{action=Index}/{id?} for Route: {controller=Link}/{action=Index}/{id?} resulting in /Link/Delete/2 and  
+2022-10-24 13:54:38.5679|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Link}/{action=Index}/{id?} with result /Link/Delete/2 
+2022-10-24 13:54:38.5679|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Link}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-10-24 13:54:38.5679|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Link}/{action=Index}/{id?} for Route: {controller=Link}/{action=Index}/{id?} resulting in /Link/Save/3 and  
+2022-10-24 13:54:38.5679|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Link}/{action=Index}/{id?} with result /Link/Save/3 
+2022-10-24 13:54:38.5679|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Link}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-10-24 13:54:38.5679|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Link}/{action=Index}/{id?} for Route: {controller=Link}/{action=Index}/{id?} resulting in /Link/Delete/3 and  
+2022-10-24 13:54:38.5679|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Link}/{action=Index}/{id?} with result /Link/Delete/3 
+2022-10-24 13:54:38.5679|1|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache miss for view '_Layout' in controller 'Link'. 
+2022-10-24 13:54:38.5679|7|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Could not find a file for view at path '/Views/Link/_Layout.cshtml'. 
+2022-10-24 13:54:38.5679|5|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Located compiled view for view at path '/Views/Shared/_Layout.cshtml'. 
+2022-10-24 13:54:38.6123|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Link}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-10-24 13:54:38.6123|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Link}/{action=Index}/{id?} for Route: {controller=Link}/{action=Index}/{id?} resulting in  and  
+2022-10-24 13:54:38.6123|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Link}/{action=Index}/{id?} with result / 
+2022-10-24 13:54:38.6123|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Link}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-10-24 13:54:38.6123|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Link}/{action=Index}/{id?} for Route: {controller=Link}/{action=Index}/{id?} resulting in  and  
+2022-10-24 13:54:38.6123|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Link}/{action=Index}/{id?} with result / 
+2022-10-24 13:54:38.6123|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Link}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-10-24 13:54:38.6123|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Link}/{action=Index}/{id?} for Route: {controller=Link}/{action=Index}/{id?} resulting in  and  
+2022-10-24 13:54:38.6123|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Link}/{action=Index}/{id?} with result / 
+2022-10-24 13:54:38.6353|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" sending HEADERS frame for stream ID 15 with length 67 and flags END_HEADERS. 
+2022-10-24 13:54:38.6384|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" sending DATA frame for stream ID 15 with length 3428 and flags NONE. 
+2022-10-24 13:54:38.6384|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 595.4951ms. 
+2022-10-24 13:54:38.6384|5|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.ViewResult. 
+2022-10-24 13:54:38.6384|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-10-24 13:54:38.6384|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-10-24 13:54:38.6384|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: Before executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-10-24 13:54:38.6384|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: After executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-10-24 13:54:38.6384|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action LinkShortener.Controllers.LinkController.Index (LinkShortener) in 1391.2709ms 
+2022-10-24 13:54:38.6384|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'LinkShortener.Controllers.LinkController.Index (LinkShortener)' 
+2022-10-24 13:54:38.6384|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" sending DATA frame for stream ID 15 with length 0 and flags END_STREAM. 
+2022-10-24 13:54:38.6716|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ShortLinkDbContext' disposed. 
+2022-10-24 13:54:38.6802|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7288/ - - - 200 - text/html;+charset=utf-8 1548.7485ms 
+2022-10-24 13:54:38.8026|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" received HEADERS frame for stream ID 17 with length 106 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2022-10-24 13:54:38.8196|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" received WINDOW_UPDATE frame for stream ID 17 with length 4 and flags 0x0. 
+2022-10-24 13:54:38.8196|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" received HEADERS frame for stream ID 19 with length 66 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2022-10-24 13:54:38.8196|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" received WINDOW_UPDATE frame for stream ID 19 with length 4 and flags 0x0. 
+2022-10-24 13:54:38.8196|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7288/lib/bootstrap/dist/css/bootstrap.min.css - - 
+2022-10-24 13:54:38.8196|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-10-24 13:54:38.8196|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7288/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - - 
+2022-10-24 13:54:38.8196|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-10-24 13:54:38.8363|0|TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2022-10-24 13:54:38.8363|0|TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2022-10-24 13:54:38.8614|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" sending HEADERS frame for stream ID 19 with length 76 and flags END_HEADERS. 
+2022-10-24 13:54:38.8614|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" sending DATA frame for stream ID 19 with length 194 and flags NONE. 
+2022-10-24 13:54:38.8614|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/css/site.css'. Physical path: 'F:\ShortUrlApp\LinkShortener\LinkShortener\wwwroot\css\site.css' 
+2022-10-24 13:54:38.8614|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" sending DATA frame for stream ID 19 with length 0 and flags END_STREAM. 
+2022-10-24 13:54:38.8614|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7288/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - - - 200 194 text/css 31.7462ms 
+2022-10-24 13:54:38.8917|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" sending HEADERS frame for stream ID 17 with length 64 and flags END_HEADERS. 
+2022-10-24 13:54:38.8962|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" sending DATA frame for stream ID 17 with length 16384 and flags NONE. 
+2022-10-24 13:54:38.8962|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" sending DATA frame for stream ID 17 with length 16384 and flags NONE. 
+2022-10-24 13:54:38.8962|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" sending DATA frame for stream ID 17 with length 16384 and flags NONE. 
+2022-10-24 13:54:38.8962|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" sending DATA frame for stream ID 17 with length 16384 and flags NONE. 
+2022-10-24 13:54:38.9155|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" sending DATA frame for stream ID 17 with length 16384 and flags NONE. 
+2022-10-24 13:54:38.9155|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" sending DATA frame for stream ID 17 with length 16384 and flags NONE. 
+2022-10-24 13:54:38.9155|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" sending DATA frame for stream ID 17 with length 16384 and flags NONE. 
+2022-10-24 13:54:38.9155|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" sending DATA frame for stream ID 17 with length 16384 and flags NONE. 
+2022-10-24 13:54:38.9155|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" sending DATA frame for stream ID 17 with length 16384 and flags NONE. 
+2022-10-24 13:54:38.9269|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" sending DATA frame for stream ID 17 with length 15270 and flags NONE. 
+2022-10-24 13:54:38.9474|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" received HEADERS frame for stream ID 21 with length 77 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2022-10-24 13:54:38.9474|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" received WINDOW_UPDATE frame for stream ID 21 with length 4 and flags 0x0. 
+2022-10-24 13:54:38.9474|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7288/LinkShortener.styles.css?v=xvQoA6SrBgIjbXcwyqqhKc2QYRscflz4PB_2PN4MeZk - - 
+2022-10-24 13:54:38.9474|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-10-24 13:54:38.9474|0|TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2022-10-24 13:54:38.9474|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" sending HEADERS frame for stream ID 21 with length 92 and flags END_HEADERS. 
+2022-10-24 13:54:38.9474|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" sending DATA frame for stream ID 21 with length 1130 and flags NONE. 
+2022-10-24 13:54:38.9474|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'F:\ShortUrlApp\LinkShortener\LinkShortener\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css' 
+2022-10-24 13:54:38.9474|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/LinkShortener.styles.css'. Physical path: 'F:\ShortUrlApp\LinkShortener\LinkShortener\obj\Debug\net6.0\scopedcss\bundle\LinkShortener.styles.css' 
+2022-10-24 13:54:38.9474|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" sending DATA frame for stream ID 21 with length 0 and flags END_STREAM. 
+2022-10-24 13:54:38.9474|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7288/LinkShortener.styles.css?v=xvQoA6SrBgIjbXcwyqqhKc2QYRscflz4PB_2PN4MeZk - - - 200 1130 text/css 3.0079ms 
+2022-10-24 13:54:38.9608|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" sending DATA frame for stream ID 17 with length 0 and flags END_STREAM. 
+2022-10-24 13:54:38.9608|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7288/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 162726 text/css 137.7252ms 
+2022-10-24 13:54:39.4192|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" received HEADERS frame for stream ID 23 with length 57 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2022-10-24 13:54:39.4192|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" received WINDOW_UPDATE frame for stream ID 23 with length 4 and flags 0x0. 
+2022-10-24 13:54:39.4192|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" received RST_STREAM frame for stream ID 23 with length 4 and flags 0x0. 
+2022-10-24 13:54:39.4327|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7288/favicon.ico - - 
+2022-10-24 13:54:39.4327|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-10-24 13:54:39.4327|0|TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2022-10-24 13:54:39.4327|14|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file transmission was cancelled System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at System.Threading.CancellationToken.ThrowIfCancellationRequested()
+   at Microsoft.AspNetCore.Http.SendFileFallback.SendFileAsync(Stream destination, String filePath, Int64 offset, Nullable`1 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(HttpResponse response, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(HttpResponse response, IFileInfo file, Int64 offset, Nullable`1 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.SendAsync()
+2022-10-24 13:54:39.4456|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon.ico'. Physical path: 'F:\ShortUrlApp\LinkShortener\LinkShortener\wwwroot\favicon.ico' 
+2022-10-24 13:54:39.4456|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7288/favicon.ico - - - 0 5430 image/x-icon 12.9666ms 
+2022-10-24 13:55:37.0269|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" received PING frame for stream ID 0 with length 8 and flags NONE. 
+2022-10-24 13:55:37.0269|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" sending PING frame for stream ID 0 with length 8 and flags ACK. 
+2022-10-24 13:56:35.6517|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" received PING frame for stream ID 0 with length 8 and flags NONE. 
+2022-10-24 13:56:35.6517|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" sending PING frame for stream ID 0 with length 8 and flags ACK. 
+2022-10-24 13:56:43.8853|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2022-10-24 13:56:43.8853|3|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping 
+2022-10-24 13:56:43.9081|36|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" is closing. 
+2022-10-24 13:56:43.9081|48|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" is closed. The last processed stream ID was 23. 
+2022-10-24 13:56:43.9081|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLLOI3I0UR" sending GOAWAY frame for stream ID 0 with length 8 and flags 0x0. 
+2022-10-24 13:56:43.9081|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMLLLOI3I0UR" received FIN. 
+2022-10-24 13:56:43.9081|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMLLLOI3I0UR" sending FIN because: "The client closed the connection." 
+2022-10-24 13:56:43.9081|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMLLLOI3I0UR" stopped. 
+2022-10-24 13:56:43.9081|4|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped 
+2022-10-24 14:13:08.4379|10409|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An additional 'IServiceProvider' was created for internal use by Entity Framework. An existing service provider was not used due to the following configuration changes: configuration added for 'MySQL:CharSet'. 
+2022-10-24 14:13:09.8204|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 5.0.17 initialized 'ShortLinkDbContext' using provider 'MySql.EntityFrameworkCore' with options: None 
+2022-10-24 14:13:09.8484|20400|DEBUG|Microsoft.EntityFrameworkCore.Migrations|Migrating using database 'shortlinkdb' on server 'localhost'. 
+2022-10-24 14:13:10.5468|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteScalar'. 
+2022-10-24 14:13:10.5720|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteScalar' (11ms). 
+2022-10-24 14:13:10.5831|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'shortlinkdb' on server 'localhost'. 
+2022-10-24 14:13:10.6080|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'shortlinkdb' on server 'localhost'. 
+2022-10-24 14:13:10.6327|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='shortlinkdb' AND TABLE_NAME='__EFMigrationsHistory'; 
+2022-10-24 14:13:10.6583|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (28ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='shortlinkdb' AND TABLE_NAME='__EFMigrationsHistory'; 
+2022-10-24 14:13:10.6647|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'shortlinkdb' on server 'localhost'. 
+2022-10-24 14:13:10.6647|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'shortlinkdb' on server 'localhost'. 
+2022-10-24 14:13:10.6647|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteScalar'. 
+2022-10-24 14:13:10.6647|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteScalar' (0ms). 
+2022-10-24 14:13:10.6647|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'shortlinkdb' on server 'localhost'. 
+2022-10-24 14:13:10.6647|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'shortlinkdb' on server 'localhost'. 
+2022-10-24 14:13:10.6647|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='shortlinkdb' AND TABLE_NAME='__EFMigrationsHistory'; 
+2022-10-24 14:13:10.6647|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='shortlinkdb' AND TABLE_NAME='__EFMigrationsHistory'; 
+2022-10-24 14:13:10.6647|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'shortlinkdb' on server 'localhost'. 
+2022-10-24 14:13:10.6647|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'shortlinkdb' on server 'localhost'. 
+2022-10-24 14:13:10.7299|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-10-24 14:13:10.7299|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2022-10-24 14:13:10.7299|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'shortlinkdb' on server 'localhost'. 
+2022-10-24 14:13:10.7299|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'shortlinkdb' on server 'localhost'. 
+2022-10-24 14:13:10.7299|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`; 
+2022-10-24 14:13:10.7299|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`; 
+2022-10-24 14:13:10.7299|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2022-10-24 14:13:10.7299|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'shortlinkdb' on server 'localhost'. 
+2022-10-24 14:13:10.7299|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'shortlinkdb' on server 'localhost'. 
+2022-10-24 14:13:10.8017|20405|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date. 
+2022-10-24 14:13:10.8017|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ShortLinkDbContext' disposed. 
+2022-10-24 14:13:10.8838|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Link/Index.cshtml'. 
+2022-10-24 14:13:10.8838|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Link/Save.cshtml'. 
+2022-10-24 14:13:10.8838|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Shared/Error.cshtml'. 
+2022-10-24 14:13:10.8838|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Shared/_ValidationScriptsPartial.cshtml'. 
+2022-10-24 14:13:10.8838|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/_ViewImports.cshtml'. 
+2022-10-24 14:13:10.8838|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/_ViewStart.cshtml'. 
+2022-10-24 14:13:10.8838|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Shared/_Layout.cshtml'. 
+2022-10-24 14:13:10.9412|12|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2022-10-24 14:13:11.0327|1|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2022-10-24 14:13:11.0617|63|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Lokers\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2022-10-24 14:13:11.0780|37|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\Lokers\AppData\Local\ASP.NET\DataProtection-Keys\key-055ebec0-6d92-43a9-8ce4-ecd0cb2d8332.xml'. 
+2022-10-24 14:13:11.0812|37|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\Lokers\AppData\Local\ASP.NET\DataProtection-Keys\key-23409029-c358-4d7d-89b6-549d95b4667c.xml'. 
+2022-10-24 14:13:11.0812|18|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {055ebec0-6d92-43a9-8ce4-ecd0cb2d8332}. 
+2022-10-24 14:13:11.0999|18|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {23409029-c358-4d7d-89b6-549d95b4667c}. 
+2022-10-24 14:13:11.1183|13|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {23409029-c358-4d7d-89b6-549d95b4667c} with expiration date 2022-11-20 13:38:10Z as default key. 
+2022-10-24 14:13:11.1183|0|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2022-10-24 14:13:11.1183|51|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI. 
+2022-10-24 14:13:11.1183|0|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2022-10-24 14:13:11.1183|4|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC. 
+2022-10-24 14:13:11.1304|3|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC. 
+2022-10-24 14:13:11.1304|2|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {23409029-c358-4d7d-89b6-549d95b4667c} as the default key. 
+2022-10-24 14:13:11.1304|65|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {23409029-c358-4d7d-89b6-549d95b4667c} was loaded during application startup. 
+2022-10-24 14:13:11.2021|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: 68571EEA0C1BD2CA1D1FC31A140ECE259117DD9D) 
+2022-10-24 14:13:11.2560|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7288 
+2022-10-24 14:13:11.2902|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5288 
+2022-10-24 14:13:11.2902|13|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly LinkShortener 
+2022-10-24 14:13:11.2902|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-10-24 14:13:11.2902|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-10-24 14:13:11.2902|0|INFO|Microsoft.Hosting.Lifetime|Content root path: F:\ShortUrlApp\LinkShortener\LinkShortener\ 
+2022-10-24 14:13:11.2902|2|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2022-10-24 14:13:11.3242|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMLLM2UD893R" received FIN. 
+2022-10-24 14:13:11.3466|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMLLM2UD893R" accepted. 
+2022-10-24 14:13:11.3466|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMLLM2UD893R" started. 
+2022-10-24 14:13:11.3854|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-10-24 14:13:11.4406|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMLLM2UD893R" stopped. 
+2022-10-24 14:13:11.4406|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMLLM2UD893R" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2022-10-24 14:13:11.9148|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMLLM2UD893S" accepted. 
+2022-10-24 14:13:11.9148|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMLLM2UD893S" started. 
+2022-10-24 14:13:12.0815|3|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMLLM2UD893S established using the following protocol: Tls12 
+2022-10-24 14:13:12.1845|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLM2UD893S" sending SETTINGS frame for stream ID 0 with length 18 and flags NONE. 
+2022-10-24 14:13:12.1910|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLM2UD893S" sending WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2022-10-24 14:13:12.1910|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLM2UD893S" received SETTINGS frame for stream ID 0 with length 18 and flags NONE. 
+2022-10-24 14:13:12.1910|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLM2UD893S" sending SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2022-10-24 14:13:12.1910|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLM2UD893S" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2022-10-24 14:13:12.1910|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLM2UD893S" received PRIORITY frame for stream ID 3 with length 5 and flags 0x0. 
+2022-10-24 14:13:12.1910|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLM2UD893S" received PRIORITY frame for stream ID 5 with length 5 and flags 0x0. 
+2022-10-24 14:13:12.1910|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLM2UD893S" received PRIORITY frame for stream ID 7 with length 5 and flags 0x0. 
+2022-10-24 14:13:12.1910|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLM2UD893S" received PRIORITY frame for stream ID 9 with length 5 and flags 0x0. 
+2022-10-24 14:13:12.1910|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLM2UD893S" received PRIORITY frame for stream ID 11 with length 5 and flags 0x0. 
+2022-10-24 14:13:12.1910|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLM2UD893S" received PRIORITY frame for stream ID 13 with length 5 and flags 0x0. 
+2022-10-24 14:13:12.1910|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLM2UD893S" received HEADERS frame for stream ID 15 with length 313 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2022-10-24 14:13:12.2528|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLM2UD893S" received WINDOW_UPDATE frame for stream ID 15 with length 4 and flags 0x0. 
+2022-10-24 14:13:12.2528|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLM2UD893S" received SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2022-10-24 14:13:12.2528|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7288/ - - 
+2022-10-24 14:13:12.2528|0|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2022-10-24 14:13:12.2528|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-10-24 14:13:12.2528|4|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path / does not match a supported file type 
+2022-10-24 14:13:12.4301|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/' 
+2022-10-24 14:13:12.4420|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'LinkShortener.Controllers.LinkController.Index (LinkShortener)' with route pattern '{controller=Link}/{action=Index}/{id?}' is valid for the request path '/' 
+2022-10-24 14:13:12.4420|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'LinkShortener.Controllers.LinkController.Index (LinkShortener)' 
+2022-10-24 14:13:12.4561|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'LinkShortener.Controllers.LinkController.Index (LinkShortener)' 
+2022-10-24 14:13:12.5275|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Index", controller = "Link"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller LinkShortener.Controllers.LinkController (LinkShortener). 
+2022-10-24 14:13:12.5275|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2022-10-24 14:13:12.5275|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2022-10-24 14:13:12.5275|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648), Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000) 
+2022-10-24 14:13:12.5275|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2022-10-24 14:13:12.5275|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2022-10-24 14:13:12.5275|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: Before executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-10-24 14:13:12.5275|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: After executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-10-24 14:13:12.5275|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller LinkShortener.Controllers.LinkController (LinkShortener) 
+2022-10-24 14:13:12.5352|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller LinkShortener.Controllers.LinkController (LinkShortener) 
+2022-10-24 14:13:12.5352|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2022-10-24 14:13:12.5352|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-10-24 14:13:12.5352|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-10-24 14:13:12.5352|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method LinkShortener.Controllers.LinkController.Index (LinkShortener) - Validation state: Valid 
+2022-10-24 14:13:12.5632|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 5.0.17 initialized 'ShortLinkDbContext' using provider 'MySql.EntityFrameworkCore' with options: None 
+2022-10-24 14:13:12.6529|10111|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<Link>()' 
+2022-10-24 14:13:13.3269|10107|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Link>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Link.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Link.CountClick (int) Required, 1], [Property: Link.DateCreate (DateTime) Required, 2], [Property: Link.LongUrl (string) Required, 3], [Property: Link.ShortUrl (string) Required, 4], }
+        SELECT l.Id, l.CountClick, l.DateCreate, l.LongUrl, l.ShortUrl
+        FROM links AS l), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Link>, 
+    LinkShortener.DAL.ShortLinkDbContext, 
+    False, 
+    False
+)' 
+2022-10-24 14:13:13.4395|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-10-24 14:13:13.4395|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2022-10-24 14:13:13.4509|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'shortlinkdb' on server 'localhost'. 
+2022-10-24 14:13:13.4579|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'shortlinkdb' on server 'localhost'. 
+2022-10-24 14:13:13.4579|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `l`.`Id`, `l`.`CountClick`, `l`.`DateCreate`, `l`.`LongUrl`, `l`.`ShortUrl`
+FROM `links` AS `l` 
+2022-10-24 14:13:13.4579|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `l`.`Id`, `l`.`CountClick`, `l`.`DateCreate`, `l`.`LongUrl`, `l`.`ShortUrl`
+FROM `links` AS `l` 
+2022-10-24 14:13:13.5446|10806|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShortLinkDbContext' started tracking 'Link' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-10-24 14:13:13.6262|10806|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShortLinkDbContext' started tracking 'Link' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-10-24 14:13:13.6291|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2022-10-24 14:13:13.6291|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'shortlinkdb' on server 'localhost'. 
+2022-10-24 14:13:13.6291|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'shortlinkdb' on server 'localhost'. 
+2022-10-24 14:13:13.6291|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method LinkShortener.Controllers.LinkController.Index (LinkShortener), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1089.4707ms. 
+2022-10-24 14:13:13.6291|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-10-24 14:13:13.6291|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-10-24 14:13:13.6291|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2022-10-24 14:13:13.6291|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-10-24 14:13:13.6427|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-10-24 14:13:13.6427|4|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.ViewResult. 
+2022-10-24 14:13:13.6427|1|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache miss for view 'Index' in controller 'Link'. 
+2022-10-24 14:13:13.6427|5|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Located compiled view for view at path '/Views/Link/Index.cshtml'. 
+2022-10-24 14:13:13.6427|7|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Could not find a file for view at path '/Views/Link/_ViewStart.cshtml'. 
+2022-10-24 14:13:13.6427|5|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Located compiled view for view at path '/Views/_ViewStart.cshtml'. 
+2022-10-24 14:13:13.6427|7|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Could not find a file for view at path '/_ViewStart.cshtml'. 
+2022-10-24 14:13:13.6616|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2022-10-24 14:13:13.6616|2|DEBUG|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|The view path '/Views/Link/Index.cshtml' was found in 13.2198ms. 
+2022-10-24 14:13:13.9089|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Link}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-10-24 14:13:13.9465|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Link}/{action=Index}/{id?} for Route: {controller=Link}/{action=Index}/{id?} resulting in /Link/Save and  
+2022-10-24 14:13:13.9465|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Link}/{action=Index}/{id?} with result /Link/Save 
+2022-10-24 14:13:13.9877|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Link}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-10-24 14:13:13.9877|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Link}/{action=Index}/{id?} for Route: {controller=Link}/{action=Index}/{id?} resulting in /Link/Save/2 and  
+2022-10-24 14:13:13.9877|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Link}/{action=Index}/{id?} with result /Link/Save/2 
+2022-10-24 14:13:13.9965|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Link}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-10-24 14:13:13.9965|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Link}/{action=Index}/{id?} for Route: {controller=Link}/{action=Index}/{id?} resulting in /Link/Delete/2 and  
+2022-10-24 14:13:13.9965|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Link}/{action=Index}/{id?} with result /Link/Delete/2 
+2022-10-24 14:13:13.9965|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Link}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-10-24 14:13:13.9965|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Link}/{action=Index}/{id?} for Route: {controller=Link}/{action=Index}/{id?} resulting in /Link/Save/3 and  
+2022-10-24 14:13:13.9965|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Link}/{action=Index}/{id?} with result /Link/Save/3 
+2022-10-24 14:13:13.9965|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Link}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-10-24 14:13:13.9965|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Link}/{action=Index}/{id?} for Route: {controller=Link}/{action=Index}/{id?} resulting in /Link/Delete/3 and  
+2022-10-24 14:13:13.9965|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Link}/{action=Index}/{id?} with result /Link/Delete/3 
+2022-10-24 14:13:13.9965|1|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache miss for view '_Layout' in controller 'Link'. 
+2022-10-24 14:13:13.9965|7|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Could not find a file for view at path '/Views/Link/_Layout.cshtml'. 
+2022-10-24 14:13:13.9965|5|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Located compiled view for view at path '/Views/Shared/_Layout.cshtml'. 
+2022-10-24 14:13:14.0873|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Link}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-10-24 14:13:14.0873|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Link}/{action=Index}/{id?} for Route: {controller=Link}/{action=Index}/{id?} resulting in  and  
+2022-10-24 14:13:14.0873|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Link}/{action=Index}/{id?} with result / 
+2022-10-24 14:13:14.0873|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Link}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-10-24 14:13:14.0873|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Link}/{action=Index}/{id?} for Route: {controller=Link}/{action=Index}/{id?} resulting in  and  
+2022-10-24 14:13:14.0873|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Link}/{action=Index}/{id?} with result / 
+2022-10-24 14:13:14.0873|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Link}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-10-24 14:13:14.0873|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Link}/{action=Index}/{id?} for Route: {controller=Link}/{action=Index}/{id?} resulting in  and  
+2022-10-24 14:13:14.0873|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Link}/{action=Index}/{id?} with result / 
+2022-10-24 14:13:14.1329|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLM2UD893S" sending HEADERS frame for stream ID 15 with length 67 and flags END_HEADERS. 
+2022-10-24 14:13:14.1329|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLM2UD893S" sending DATA frame for stream ID 15 with length 3428 and flags NONE. 
+2022-10-24 14:13:14.1485|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 499.4676ms. 
+2022-10-24 14:13:14.1485|5|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.ViewResult. 
+2022-10-24 14:13:14.1485|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-10-24 14:13:14.1485|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-10-24 14:13:14.1860|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: Before executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-10-24 14:13:14.1860|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: After executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-10-24 14:13:14.1860|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action LinkShortener.Controllers.LinkController.Index (LinkShortener) in 1659.2799ms 
+2022-10-24 14:13:14.1860|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'LinkShortener.Controllers.LinkController.Index (LinkShortener)' 
+2022-10-24 14:13:14.1860|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLM2UD893S" sending DATA frame for stream ID 15 with length 0 and flags END_STREAM. 
+2022-10-24 14:13:14.2535|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ShortLinkDbContext' disposed. 
+2022-10-24 14:13:14.2754|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7288/ - - - 200 - text/html;+charset=utf-8 1992.2417ms 
+2022-10-24 14:13:14.3636|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLM2UD893S" received HEADERS frame for stream ID 17 with length 106 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2022-10-24 14:13:14.3823|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLM2UD893S" received WINDOW_UPDATE frame for stream ID 17 with length 4 and flags 0x0. 
+2022-10-24 14:13:14.3823|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLM2UD893S" received RST_STREAM frame for stream ID 17 with length 4 and flags 0x0. 
+2022-10-24 14:13:14.3823|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7288/lib/bootstrap/dist/css/bootstrap.min.css - - 
+2022-10-24 14:13:14.3823|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-10-24 14:13:14.3938|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLM2UD893S" received HEADERS frame for stream ID 19 with length 66 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2022-10-24 14:13:14.3938|0|TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2022-10-24 14:13:14.3938|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLM2UD893S" received WINDOW_UPDATE frame for stream ID 19 with length 4 and flags 0x0. 
+2022-10-24 14:13:14.3938|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLM2UD893S" received RST_STREAM frame for stream ID 19 with length 4 and flags 0x0. 
+2022-10-24 14:13:14.3938|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLM2UD893S" received HEADERS frame for stream ID 21 with length 77 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2022-10-24 14:13:14.3938|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLM2UD893S" received WINDOW_UPDATE frame for stream ID 21 with length 4 and flags 0x0. 
+2022-10-24 14:13:14.3938|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7288/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - - 
+2022-10-24 14:13:14.3938|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-10-24 14:13:14.3938|0|TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2022-10-24 14:13:14.3938|14|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file transmission was cancelled System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at System.Threading.CancellationToken.ThrowIfCancellationRequested()
+   at Microsoft.AspNetCore.Http.SendFileFallback.SendFileAsync(Stream destination, String filePath, Int64 offset, Nullable`1 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(HttpResponse response, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(HttpResponse response, IFileInfo file, Int64 offset, Nullable`1 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.SendAsync()
+2022-10-24 14:13:14.3938|14|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file transmission was cancelled System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at System.Threading.CancellationToken.ThrowIfCancellationRequested()
+   at Microsoft.AspNetCore.Http.SendFileFallback.SendFileAsync(Stream destination, String filePath, Int64 offset, Nullable`1 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(HttpResponse response, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(HttpResponse response, IFileInfo file, Int64 offset, Nullable`1 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.SendAsync()
+2022-10-24 14:13:14.4115|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/css/site.css'. Physical path: 'F:\ShortUrlApp\LinkShortener\LinkShortener\wwwroot\css\site.css' 
+2022-10-24 14:13:14.4115|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'F:\ShortUrlApp\LinkShortener\LinkShortener\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css' 
+2022-10-24 14:13:14.4115|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7288/lib/bootstrap/dist/css/bootstrap.min.css - - - 0 162726 text/css 25.3911ms 
+2022-10-24 14:13:14.4115|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7288/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - - - 0 194 text/css 14.2052ms 
+2022-10-24 14:13:14.4115|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7288/LinkShortener.styles.css?v=xvQoA6SrBgIjbXcwyqqhKc2QYRscflz4PB_2PN4MeZk - - 
+2022-10-24 14:13:14.4115|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-10-24 14:13:14.4115|0|TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2022-10-24 14:13:14.4115|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLM2UD893S" received RST_STREAM frame for stream ID 21 with length 4 and flags 0x0. 
+2022-10-24 14:13:14.4115|14|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file transmission was cancelled System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at System.Threading.CancellationToken.ThrowIfCancellationRequested()
+   at Microsoft.AspNetCore.Http.StreamCopyOperationInternal.CopyToAsync(Stream source, Stream destination, Nullable`1 count, Int32 bufferSize, CancellationToken cancel)
+   at Microsoft.AspNetCore.Http.SendFileFallback.SendFileAsync(Stream destination, String filePath, Int64 offset, Nullable`1 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(HttpResponse response, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(HttpResponse response, IFileInfo file, Int64 offset, Nullable`1 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.SendAsync()
+2022-10-24 14:13:14.4115|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/LinkShortener.styles.css'. Physical path: 'F:\ShortUrlApp\LinkShortener\LinkShortener\obj\Debug\net6.0\scopedcss\bundle\LinkShortener.styles.css' 
+2022-10-24 14:13:14.4115|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7288/LinkShortener.styles.css?v=xvQoA6SrBgIjbXcwyqqhKc2QYRscflz4PB_2PN4MeZk - - - 0 1130 text/css 3.7781ms 
+2022-10-24 14:13:14.5392|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLM2UD893S" received HEADERS frame for stream ID 23 with length 57 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2022-10-24 14:13:14.5392|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLM2UD893S" received WINDOW_UPDATE frame for stream ID 23 with length 4 and flags 0x0. 
+2022-10-24 14:13:14.5392|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7288/favicon.ico - - 
+2022-10-24 14:13:14.5392|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-10-24 14:13:14.5392|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLM2UD893S" received RST_STREAM frame for stream ID 23 with length 4 and flags 0x0. 
+2022-10-24 14:13:14.5392|0|TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2022-10-24 14:13:14.5392|14|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file transmission was cancelled System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at System.Threading.CancellationToken.ThrowIfCancellationRequested()
+   at Microsoft.AspNetCore.Http.SendFileFallback.SendFileAsync(Stream destination, String filePath, Int64 offset, Nullable`1 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(HttpResponse response, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(HttpResponse response, IFileInfo file, Int64 offset, Nullable`1 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.SendAsync()
+2022-10-24 14:13:14.5392|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon.ico'. Physical path: 'F:\ShortUrlApp\LinkShortener\LinkShortener\wwwroot\favicon.ico' 
+2022-10-24 14:13:14.5392|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7288/favicon.ico - - - 0 5430 image/x-icon 8.0676ms 
+2022-10-24 14:14:12.7755|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLM2UD893S" received PING frame for stream ID 0 with length 8 and flags NONE. 
+2022-10-24 14:14:12.7755|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLM2UD893S" sending PING frame for stream ID 0 with length 8 and flags ACK. 
+2022-10-24 14:15:11.1193|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLM2UD893S" received PING frame for stream ID 0 with length 8 and flags NONE. 
+2022-10-24 14:15:11.1193|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLM2UD893S" sending PING frame for stream ID 0 with length 8 and flags ACK. 
+2022-10-24 14:15:28.4794|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2022-10-24 14:15:28.4794|3|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping 
+2022-10-24 14:15:28.5015|36|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLM2UD893S" is closing. 
+2022-10-24 14:15:28.5015|48|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLM2UD893S" is closed. The last processed stream ID was 23. 
+2022-10-24 14:15:28.5015|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMLLM2UD893S" sending GOAWAY frame for stream ID 0 with length 8 and flags 0x0. 
+2022-10-24 14:15:28.5015|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMLLM2UD893S" received FIN. 
+2022-10-24 14:15:28.5082|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMLLM2UD893S" stopped. 
+2022-10-24 14:15:28.5082|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMLLM2UD893S" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2022-10-24 14:15:28.5082|4|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped 

@@ -1,0 +1,12 @@
+2022-10-24 13:54:35.9946|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7288 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-10-24 13:54:36.0184|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5288 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-10-24 13:54:36.0184|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-10-24 13:54:36.0184|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-10-24 13:54:36.0184|0|INFO|Microsoft.Hosting.Lifetime|Content root path: F:\ShortUrlApp\LinkShortener\LinkShortener\ |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-10-24 13:56:43.8853|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStopping
+2022-10-24 14:13:11.2560|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7288 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-10-24 14:13:11.2902|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5288 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-10-24 14:13:11.2902|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-10-24 14:13:11.2902|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-10-24 14:13:11.2902|0|INFO|Microsoft.Hosting.Lifetime|Content root path: F:\ShortUrlApp\LinkShortener\LinkShortener\ |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-10-24 14:15:28.4794|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStopping
