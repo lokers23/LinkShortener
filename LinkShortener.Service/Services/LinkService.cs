@@ -3,6 +3,7 @@ using LinkShortener.DAL.Interfaces;
 using LinkShortener.DAL.Models;
 using LinkShortener.DAL.ViewModels;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 
 namespace LinkShortener.Service.Services;
 
@@ -10,9 +11,11 @@ public class LinkService : ILinkService
 {
     private const string HostUrl = "https://localhost:7288/";
     private readonly IRepository<Link> _linkRepository;
+    private readonly ILogger<LinkService> _logger;
 
-    public LinkService(IRepository<Link> linkRepository)
+    public LinkService(ILogger<LinkService> logger, IRepository<Link> linkRepository)
     {
+        _logger = logger;
         _linkRepository = linkRepository;
     }
 
@@ -30,8 +33,9 @@ public class LinkService : ILinkService
             await _linkRepository.Delete(link);
             return true;
         }
-        catch (Exception)
+        catch (Exception exception)
         {
+            _logger.LogError(exception.Message);
             return false;
         }
     }
@@ -54,8 +58,9 @@ public class LinkService : ILinkService
             await _linkRepository.Update(linkFromDb);
             return true;
         }
-        catch (Exception)
+        catch (Exception exception)
         {
+            _logger.LogError(exception.Message);
             return false;
         }
     }
@@ -67,8 +72,9 @@ public class LinkService : ILinkService
             var links = await _linkRepository.GetAll().ToListAsync();
             return links;
         }
-        catch (Exception)
+        catch (Exception exception)
         {
+            _logger.LogError(exception.Message);
             return new List<Link>();
         }
     }
@@ -80,8 +86,9 @@ public class LinkService : ILinkService
             var link = await _linkRepository.GetById(id);
             return link;
         }
-        catch (Exception)
+        catch (Exception exception)
         {
+            _logger.LogError(exception.Message);
             return null;
         }
     }
@@ -106,8 +113,9 @@ public class LinkService : ILinkService
 
             return true;
         }
-        catch (Exception)
+        catch (Exception exception)
         {
+            _logger.LogError(exception.Message);
             return false;
         }
     }
@@ -138,8 +146,9 @@ public class LinkService : ILinkService
             await UpCountOfLinkClicks(link, 1);
             return link.LongUrl;
         }
-        catch (Exception)
+        catch (Exception exception)
         {
+            _logger.LogError(exception.Message);
             return null;
         }
     }

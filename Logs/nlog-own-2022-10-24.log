@@ -1,0 +1,20 @@
+2022-10-24 13:26:22.3079|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7288 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-10-24 13:26:22.3389|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5288 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-10-24 13:26:22.3389|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-10-24 13:26:22.3412|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-10-24 13:26:22.3412|0|INFO|Microsoft.Hosting.Lifetime|Content root path: F:\ShortUrlApp\LinkShortener\LinkShortener\ |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-10-24 13:26:23.7707|0|ERROR|LinkShortener.Controllers.LinkController|Произошла ошибка на сервере |url: https://localhost/|action: Index|LinkShortener.Controllers.LinkController.Index
+2022-10-24 13:28:03.3836|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStopping
+2022-10-24 13:35:06.0405|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7288 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-10-24 13:35:06.0714|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5288 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-10-24 13:35:06.0714|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-10-24 13:35:06.0714|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-10-24 13:35:06.0714|0|INFO|Microsoft.Hosting.Lifetime|Content root path: F:\ShortUrlApp\LinkShortener\LinkShortener\ |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-10-24 13:35:07.1826|0|ERROR|LinkShortener.Controllers.LinkController|Value cannot be null. (Parameter 'Тестовая ошибка') |url: https://localhost/|action: Index|LinkShortener.Controllers.LinkController.Index
+2022-10-24 13:36:40.1728|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStopping
+2022-10-24 13:42:21.1133|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7288 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-10-24 13:42:21.1639|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5288 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-10-24 13:42:21.1639|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-10-24 13:42:21.1664|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-10-24 13:42:21.1664|0|INFO|Microsoft.Hosting.Lifetime|Content root path: F:\ShortUrlApp\LinkShortener\LinkShortener\ |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-10-24 13:45:05.8764|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStopping

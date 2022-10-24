@@ -5,11 +5,15 @@ using LinkShortener.DAL.Repositories;
 using LinkShortener.Service;
 using LinkShortener.Service.Services;
 using Microsoft.EntityFrameworkCore;
+using NLog.Web;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Logging.ClearProviders();
+builder.Host.UseNLog();
+
 builder.Services.AddDbContext<ShortLinkDbContext>();
 
 builder.Services.AddScoped<IRepository<Link>, LinkRepository>();

@@ -10,7 +10,8 @@
         "dependencies": {
           "LinkShortener.DAL": "1.0.0",
           "LinkShortener.Service": "1.0.0",
-          "Microsoft.EntityFrameworkCore.Tools": "5.0.17"
+          "Microsoft.EntityFrameworkCore.Tools": "5.0.17",
+          "NLog.Web.AspNetCore": "5.1.4"
         },
         "runtime": {
           "LinkShortener.dll": {}
@@ -225,6 +226,38 @@
           "lib/netstandard2.1/MySql.EntityFrameworkCore.dll": {
             "assemblyVersion": "5.0.17.0",
             "fileVersion": "5.0.17.0"
+          }
+        }
+      },
+      "NLog/5.0.4": {
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.4.1331"
+          }
+        }
+      },
+      "NLog.Extensions.Logging/5.0.4": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "5.0.0",
+          "Microsoft.Extensions.Logging": "5.0.0",
+          "NLog": "5.0.4"
+        },
+        "runtime": {
+          "lib/net5.0/NLog.Extensions.Logging.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.4.221"
+          }
+        }
+      },
+      "NLog.Web.AspNetCore/5.1.4": {
+        "dependencies": {
+          "NLog.Extensions.Logging": "5.0.4"
+        },
+        "runtime": {
+          "lib/net5.0/NLog.Web.AspNetCore.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.1.4.628"
           }
         }
       },
@@ -544,6 +577,27 @@
       "sha512": "sha512-0mnZR4OzhQ+b1/MunTuWlTGuEPwBvpe9S343E2qBQQ6xrsKmRi9imj3nkbU5+7AVDtenYy0lxF1Y51Y7pTti6g==",
       "path": "mysql.entityframeworkcore/5.0.17",
       "hashPath": "mysql.entityframeworkcore.5.0.17.nupkg.sha512"
+    },
+    "NLog/5.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hMyC7jq1m7c339DZXTRz96b+0YsIYSwAUB8sAWMtqXd2uwJjYe+y1k74fbItODPqDuE/krd6A4mxew9gLMS+PQ==",
+      "path": "nlog/5.0.4",
+      "hashPath": "nlog.5.0.4.nupkg.sha512"
+    },
+    "NLog.Extensions.Logging/5.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-43f4l7pY5cEjU/m2Xj4kDZhBmwS1xYP1kOzCQiXwv3PWpziGLfF8kA22idk+yRhMfNVExQ/OFnBaoxk6JB3JeA==",
+      "path": "nlog.extensions.logging/5.0.4",
+      "hashPath": "nlog.extensions.logging.5.0.4.nupkg.sha512"
+    },
+    "NLog.Web.AspNetCore/5.1.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LxKgX/vvjk8dHe5EcHTrSBrgu5G+I8KLtU2if9x83CEK2bwFNvb5oudtH/ZtjzLALFM8uN/URHznBMocQi30Ng==",
+      "path": "nlog.web.aspnetcore/5.1.4",
+      "hashPath": "nlog.web.aspnetcore.5.1.4.nupkg.sha512"
     },
     "Portable.BouncyCastle/1.9.0": {
       "type": "package",

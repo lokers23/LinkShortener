@@ -1,0 +1,27 @@
+2022-10-24 13:26:17.7479 Info Message Template Auto Format enabled
+2022-10-24 13:26:17.7713 Info Loading assembly: NLog.Web.AspNetCore
+2022-10-24 13:26:17.9154 Info Adding target FileTarget(Name=allfile)
+2022-10-24 13:26:17.9154 Info Adding target FileTarget(Name=ownFile-web)
+2022-10-24 13:26:17.9154 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-10-24 13:26:17.9733 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=F:\ShortUrlApp\LinkShortener\LinkShortener\bin\Debug\net6.0\NLog.config
+2022-10-24 13:26:18.0314 Info Configuration initialized.
+2022-10-24 13:26:18.0810 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.0.4.1331. Product version: 5.0.4+aa1d486dedd0a8ab6d32b2792e74cc86ae39a0aa. GlobalAssemblyCache: False
+2022-10-24 13:26:18.0973 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=F:\ShortUrlApp\LinkShortener\LinkShortener\bin\Debug\net6.0\NLog.config
+2022-10-24 13:35:02.6794 Info Message Template Auto Format enabled
+2022-10-24 13:35:02.7004 Info Loading assembly: NLog.Web.AspNetCore
+2022-10-24 13:35:02.8599 Info Adding target FileTarget(Name=allfile)
+2022-10-24 13:35:02.8701 Info Adding target FileTarget(Name=ownFile-web)
+2022-10-24 13:35:02.8701 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-10-24 13:35:02.9347 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=F:\ShortUrlApp\LinkShortener\LinkShortener\bin\Debug\net6.0\NLog.config
+2022-10-24 13:35:02.9891 Info Configuration initialized.
+2022-10-24 13:35:02.9891 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.0.4.1331. Product version: 5.0.4+aa1d486dedd0a8ab6d32b2792e74cc86ae39a0aa. GlobalAssemblyCache: False
+2022-10-24 13:35:02.9891 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=F:\ShortUrlApp\LinkShortener\LinkShortener\bin\Debug\net6.0\NLog.config
+2022-10-24 13:42:16.8627 Info Message Template Auto Format enabled
+2022-10-24 13:42:16.8877 Info Loading assembly: NLog.Web.AspNetCore
+2022-10-24 13:42:17.0564 Info Adding target FileTarget(Name=allfile)
+2022-10-24 13:42:17.0564 Info Adding target FileTarget(Name=ownFile-web)
+2022-10-24 13:42:17.0638 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-10-24 13:42:17.1323 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=F:\ShortUrlApp\LinkShortener\LinkShortener\bin\Debug\net6.0\NLog.config
+2022-10-24 13:42:17.1938 Info Configuration initialized.
+2022-10-24 13:42:17.2182 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.0.4.1331. Product version: 5.0.4+aa1d486dedd0a8ab6d32b2792e74cc86ae39a0aa. GlobalAssemblyCache: False
+2022-10-24 13:42:17.2182 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=F:\ShortUrlApp\LinkShortener\LinkShortener\bin\Debug\net6.0\NLog.config
