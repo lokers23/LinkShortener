@@ -10,19 +10,27 @@
     <div>
         <input type="hidden" name="Id" value="@Model.Id"/>
     </div>
-    <div>
+    <div  class="form-group">
         <label class="form-label fs-4 fw-bolder">Полная ссылка</label>
-        <input class="w-100 mb-2 input-group" name="longUrl" type="text" required="required" placeholder="Введите ссылку, чтобы сократить её" value="@Model.LongUrl"/>
+        <input asp-for="LongUrl" class="w-100 mb-2 form-control" name="longUrl" type="text" placeholder="Введите ссылку, чтобы сократить её"/>
         <span asp-validation-for="LongUrl" class="fs-5 text-danger"></span>
     </div>
-    <dv>
+    <div>
         <input type="hidden" name="ShortUrl" value="@Model.ShortUrl"/>
-    </dv>
-    <dv>
-        <input type="hidden" name="DateCreate" value="@Model.DateCreate"/>
-    </dv>
-    <dv>
-        <input type="hidden" name="CountClick" value="@Model.CountClick"/>
-    </dv>
+    </div>
+    @if (Model.Id != 0)
+    {
+        <div class="form-group">
+            <label class="form-label fs-4 fw-bolder">Дата создания</label>
+            <input asp-for="DateCreate" required="required" class="form-control"/>
+            <span asp-validation-for="DateCreate" class="fs-5 text-danger"></span>
+        </div>
+        <div class="form-group mb-2">
+            <label class="form-label fs-4 fw-bolder">Количество переходов</label>
+            <input asp-for="CountClick" type="number" required="required" class="form-control"/>
+            <span asp-validation-for="CountClick" class="fs-5 text-danger"></span>
+        </div>
+    }
+    
     <button class="btn btn-secondary fw-bolder" type="submit">Сократить</button>
 </form>
