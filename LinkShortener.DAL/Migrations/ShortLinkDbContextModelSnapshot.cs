@@ -31,11 +31,11 @@ namespace LinkShortener.DAL.Migrations
 
                     b.Property<string>("LongUrl")
                         .IsRequired()
-                        .HasColumnType("varchar(10000)");
+                        .HasColumnType("text");
 
                     b.Property<string>("ShortUrl")
                         .IsRequired()
-                        .HasColumnType("varchar(10000)");
+                        .HasColumnType("text");
 
                     b.HasKey("Id");
 

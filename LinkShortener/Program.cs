@@ -3,6 +3,7 @@ using LinkShortener.DAL.Interfaces;
 using LinkShortener.DAL.Models;
 using LinkShortener.DAL.Repositories;
 using LinkShortener.Service;
+using LinkShortener.Service.Interfaces;
 using LinkShortener.Service.Services;
 using Microsoft.EntityFrameworkCore;
 using NLog.Web;

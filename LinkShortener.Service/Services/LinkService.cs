@@ -2,6 +2,7 @@
 using LinkShortener.DAL.Interfaces;
 using LinkShortener.DAL.Models;
 using LinkShortener.DAL.ViewModels;
+using LinkShortener.Service.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
@@ -19,18 +20,18 @@ public class LinkService : ILinkService
         _linkRepository = linkRepository;
     }
 
-    public async Task<bool> DeleteLink(int id)
+    public async Task<bool> DeleteLinkAsync(int id)
     {
         try
         {
-            var link = await _linkRepository.GetById(id);
+            var link = await _linkRepository.GetByIdAsync(id);
 
             if (link == null)
             {
                 return false;
             }
 
-            await _linkRepository.Delete(link);
+            await _linkRepository.DeleteAsync(link);
             return true;
         }
         catch (Exception exception)
@@ -40,11 +41,11 @@ public class LinkService : ILinkService
         }
     }
 
-    public async Task<bool> UpdateLink(LongUrlViewModel longUrlViewModel)
+    public async Task<bool> UpdateLinkAsync(LongUrlViewModel longUrlViewModel)
     {
         try
         {
-            var linkFromDb = await _linkRepository.GetById(longUrlViewModel.Id);
+            var linkFromDb = await _linkRepository.GetByIdAsync(longUrlViewModel.Id);
             if (linkFromDb == null)
             {
                 return false;
@@ -55,7 +56,7 @@ public class LinkService : ILinkService
             linkFromDb.DateCreate = longUrlViewModel.DateCreate;
             linkFromDb.CountClick = longUrlViewModel.CountClick;
 
-            await _linkRepository.Update(linkFromDb);
+            await _linkRepository.UpdateAsync(linkFromDb);
             return true;
         }
         catch (Exception exception)
@@ -65,7 +66,7 @@ public class LinkService : ILinkService
         }
     }
 
-    public async Task<List<Link>> GetLinks()
+    public async Task<List<Link>> GetLinksAsync()
     {
         try
         {
@@ -79,11 +80,11 @@ public class LinkService : ILinkService
         }
     }
 
-    public async Task<Link?> GetLinkById(int id)
+    public async Task<Link?> GetLinkByIdAsync(int id)
     {
         try
         {
-            var link = await _linkRepository.GetById(id);
+            var link = await _linkRepository.GetByIdAsync(id);
             return link;
         }
         catch (Exception exception)
@@ -93,7 +94,7 @@ public class LinkService : ILinkService
         }
     }
 
-    public async Task<bool> CreateLink(LongUrlViewModel longUrlViewModel)
+    public async Task<bool> CreateLinkAsync(LongUrlViewModel longUrlViewModel)
     {
         try
         {
@@ -108,7 +109,7 @@ public class LinkService : ILinkService
                     CountClick = 0
                 };
 
-                await _linkRepository.Create(link);
+                await _linkRepository.CreateAsync(link);
             }
 
             return true;
@@ -133,7 +134,7 @@ public class LinkService : ILinkService
         return shortUrl;
     }
 
-    public async Task<string?> GetLongUrlByShortUrl(string shortUrl)
+    public async Task<string?> GetLongUrlByShortUrlAsync(string shortUrl)
     {
         try
         {
@@ -143,7 +144,7 @@ public class LinkService : ILinkService
                 return null;
             }
 
-            await UpCountOfLinkClicks(link, 1);
+            await UpCountOfLinkClicksAsync(link, 1);
             return link.LongUrl;
         }
         catch (Exception exception)
@@ -153,10 +154,10 @@ public class LinkService : ILinkService
         }
     }
 
-    private async Task UpCountOfLinkClicks(Link link, int upNumber)
+    private async Task UpCountOfLinkClicksAsync(Link link, int upNumber)
     {
         link.CountClick += upNumber;
-        await _linkRepository.Update(link);
+        await _linkRepository.UpdateAsync(link);
     }
 
 }

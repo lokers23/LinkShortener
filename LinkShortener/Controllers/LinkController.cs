@@ -1,5 +1,6 @@
 using LinkShortener.DAL.ViewModels;
 using LinkShortener.Service;
+using LinkShortener.Service.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LinkShortener.Controllers
@@ -13,7 +14,7 @@ namespace LinkShortener.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            var links = await _linkService.GetLinks();
+            var links = await _linkService.GetLinksAsync();
             return View(links);
         }
 
@@ -26,7 +27,7 @@ namespace LinkShortener.Controllers
                 return View(longUrlViewModel);
             }
             
-            var link = await _linkService.GetLinkById(id);
+            var link = await _linkService.GetLinkByIdAsync(id);
             if (link == null)
             {
                 return BadRequest("Такого элемента не существует");
@@ -49,11 +50,11 @@ namespace LinkShortener.Controllers
                 bool isSuccess;
                 if (longUrlViewModel.Id == 0)
                 {
-                    isSuccess = await _linkService.CreateLink(longUrlViewModel);
+                    isSuccess = await _linkService.CreateLinkAsync(longUrlViewModel);
                 }
                 else
                 {
-                    isSuccess = await _linkService.UpdateLink(longUrlViewModel);
+                    isSuccess = await _linkService.UpdateLinkAsync(longUrlViewModel);
                 }
 
                 if (!isSuccess)
@@ -69,7 +70,7 @@ namespace LinkShortener.Controllers
         
         public async Task<IActionResult> Delete(int id)
         {
-            var isDeleteLink = await _linkService.DeleteLink(id);
+            var isDeleteLink = await _linkService.DeleteLinkAsync(id);
             if (!isDeleteLink)
             {
                 return BadRequest("Такого элемента не существует");
@@ -80,7 +81,7 @@ namespace LinkShortener.Controllers
         
         public async Task<IActionResult> RedirectToLongUrl(string url)
         {
-            var longUrl = await _linkService.GetLongUrlByShortUrl(url);
+            var longUrl = await _linkService.GetLongUrlByShortUrlAsync(url);
             if (string.IsNullOrEmpty(longUrl))
             {
                 return NotFound("Такой сокращенной ссылки нет в базе данных");

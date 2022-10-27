@@ -1,16 +1,15 @@
-﻿using LinkShortener.DAL;
-using LinkShortener.DAL.Models;
+﻿using LinkShortener.DAL.Models;
 using LinkShortener.DAL.ViewModels;
 
-namespace LinkShortener.Service;
+namespace LinkShortener.Service.Interfaces;
 
 public interface ILinkService
 {
-    Task<bool> DeleteLink(int id);
-    Task<bool> UpdateLink(LongUrlViewModel longUrlViewModel);
-    Task<List<Link>> GetLinks();
-    Task<Link?> GetLinkById(int id);
-    Task<bool> CreateLink(LongUrlViewModel longUrlViewModel);
+    Task<bool> DeleteLinkAsync(int id);
+    Task<bool> UpdateLinkAsync(LongUrlViewModel longUrlViewModel);
+    Task<List<Link>> GetLinksAsync();
+    Task<Link?> GetLinkByIdAsync(int id);
+    Task<bool> CreateLinkAsync(LongUrlViewModel longUrlViewModel);
     string ReduceUrl(string host, string? longUrl);
-    Task<string?> GetLongUrlByShortUrl(string shortUrl);
+    Task<string?> GetLongUrlByShortUrlAsync(string shortUrl);
 }

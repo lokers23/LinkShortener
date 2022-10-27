@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkShortener.DAL", "LinkSh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkShortener.Service", "LinkShortener.Service\LinkShortener.Service.csproj", "{8B096C99-716F-410E-A28E-04A159C73B98}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkShortener.Service.Tests", "LinkShortener.Service.Tests\LinkShortener.Service.Tests.csproj", "{9133F62C-E9E8-4DB2-A17B-D852BF86A4D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{8B096C99-716F-410E-A28E-04A159C73B98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B096C99-716F-410E-A28E-04A159C73B98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B096C99-716F-410E-A28E-04A159C73B98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9133F62C-E9E8-4DB2-A17B-D852BF86A4D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9133F62C-E9E8-4DB2-A17B-D852BF86A4D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9133F62C-E9E8-4DB2-A17B-D852BF86A4D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9133F62C-E9E8-4DB2-A17B-D852BF86A4D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -14,8 +14,8 @@ namespace LinkShortener.DAL.Migrations
                 {
                     Id = table.Column<int>(type: "int(11)", nullable: false)
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
-                    LongUrl = table.Column<string>(type: "varchar(10000)", nullable: false),
-                    ShortUrl = table.Column<string>(type: "varchar(10000)", nullable: false),
+                    LongUrl = table.Column<string>(type: "text", nullable: false),
+                    ShortUrl = table.Column<string>(type: "text", nullable: false),
                     DateCreate = table.Column<DateTime>(type: "date", nullable: false),
                     CountClick = table.Column<int>(type: "int(11)", nullable: false)
                 },

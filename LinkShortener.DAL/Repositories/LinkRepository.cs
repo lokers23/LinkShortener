@@ -12,7 +12,7 @@ public class LinkRepository: IRepository<Link>
         _db = context;
     }
 
-    public async Task Create(Link model)
+    public async Task CreateAsync(Link model)
     {
         await _db.Links.AddAsync(model);
         await _db.SaveChangesAsync();
@@ -23,19 +23,19 @@ public class LinkRepository: IRepository<Link>
         return _db.Links;
     }
 
-    public async Task<Link?> GetById(int id)
+    public async Task<Link?> GetByIdAsync(int id)
     {
         return await _db.Links.FirstOrDefaultAsync(x => x.Id == id);
     }
 
-    public async Task<Link> Update(Link model)
+    public async Task<Link> UpdateAsync(Link model)
     {
         _db.Links.Update(model);
         await _db.SaveChangesAsync();
         return model;
     }
 
-    public async Task Delete(Link model)
+    public async Task DeleteAsync(Link model)
     {
         _db.Links.Remove(model);
         await _db.SaveChangesAsync();

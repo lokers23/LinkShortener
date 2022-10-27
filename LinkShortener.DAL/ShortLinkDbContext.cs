@@ -41,11 +41,11 @@ namespace LinkShortener.DAL
 
                 entity.Property(e => e.LongUrl)
                     .IsRequired()
-                    .HasColumnType("varchar(10000)");
+                    .HasColumnType("text");
 
                 entity.Property(e => e.ShortUrl)
                     .IsRequired()
-                    .HasColumnType("varchar(10000)");
+                    .HasColumnType("text");
             });
 
             OnModelCreatingPartial(modelBuilder);
