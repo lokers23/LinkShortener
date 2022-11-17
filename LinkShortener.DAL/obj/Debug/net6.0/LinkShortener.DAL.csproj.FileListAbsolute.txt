@@ -12,3 +12,6 @@ F:\ShortUrlApp\LinkShortener\LinkShortener.DAL\obj\Debug\net6.0\refint\LinkShort
 F:\ShortUrlApp\LinkShortener\LinkShortener.DAL\obj\Debug\net6.0\LinkShortener.DAL.pdb
 F:\ShortUrlApp\LinkShortener\LinkShortener.DAL\obj\Debug\net6.0\LinkShortener.DAL.genruntimeconfig.cache
 F:\ShortUrlApp\LinkShortener\LinkShortener.DAL\obj\Debug\net6.0\ref\LinkShortener.DAL.dll
+F:\ShortUrlApp\LinkShortener\LinkShortener.DAL\bin\Debug\net6.0\LinkShortener.Domain.dll
+F:\ShortUrlApp\LinkShortener\LinkShortener.DAL\bin\Debug\net6.0\LinkShortener.Domain.pdb
+F:\ShortUrlApp\LinkShortener\LinkShortener.DAL\obj\Debug\net6.0\LinkShortener.DAL.csproj.CopyComplete

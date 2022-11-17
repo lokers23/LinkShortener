@@ -1,0 +1,14 @@
+2022-11-16 11:51:42.6197|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7288 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-11-16 11:51:42.6670|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5288 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-11-16 11:51:42.6670|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-11-16 11:51:42.6670|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-11-16 11:51:42.6670|0|INFO|Microsoft.Hosting.Lifetime|Content root path: F:\ShortUrlApp\LinkShortener\LinkShortener\ |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-11-16 11:54:12.8475|0|ERROR|LinkShortener.Service.Services.LinkService|Can not update element with id equal to 0. System.ComponentModel.DataAnnotations.ValidationException: Can not update element with id equal to 0.
+   at LinkShortener.Service.Services.LinkService.UpdateLinkAsync(LongUrlViewModel longUrlViewModel) in F:\ShortUrlApp\LinkShortener\LinkShortener.Service\Services\LinkService.cs:line 51|url: https://localhost/api/v1/linkapi/|action: UpdateLink|LinkShortener.Service.Services.LinkService.UpdateLinkAsync
+2022-11-16 12:04:20.2905|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStopping
+2022-11-16 12:19:37.0929|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7288 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-11-16 12:19:37.1209|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5288 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-11-16 12:19:37.1209|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-11-16 12:19:37.1209|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-11-16 12:19:37.1209|0|INFO|Microsoft.Hosting.Lifetime|Content root path: F:\ShortUrlApp\LinkShortener\LinkShortener\ |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-11-16 15:43:06.4188|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStopping

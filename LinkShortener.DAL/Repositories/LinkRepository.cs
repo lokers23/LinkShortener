@@ -1,5 +1,5 @@
 ﻿using LinkShortener.DAL.Interfaces;
-using LinkShortener.DAL.Models;
+using LinkShortener.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace LinkShortener.DAL.Repositories;

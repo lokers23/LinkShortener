@@ -1,0 +1,12 @@
+F:\ShortUrlApp\LinkShortener\LinkShortener.Domain\bin\Debug\net6.0\LinkShortener.Domain.deps.json
+F:\ShortUrlApp\LinkShortener\LinkShortener.Domain\bin\Debug\net6.0\LinkShortener.Domain.dll
+F:\ShortUrlApp\LinkShortener\LinkShortener.Domain\bin\Debug\net6.0\LinkShortener.Domain.pdb
+F:\ShortUrlApp\LinkShortener\LinkShortener.Domain\obj\Debug\net6.0\LinkShortener.Domain.csproj.AssemblyReference.cache
+F:\ShortUrlApp\LinkShortener\LinkShortener.Domain\obj\Debug\net6.0\LinkShortener.Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\ShortUrlApp\LinkShortener\LinkShortener.Domain\obj\Debug\net6.0\LinkShortener.Domain.AssemblyInfoInputs.cache
+F:\ShortUrlApp\LinkShortener\LinkShortener.Domain\obj\Debug\net6.0\LinkShortener.Domain.AssemblyInfo.cs
+F:\ShortUrlApp\LinkShortener\LinkShortener.Domain\obj\Debug\net6.0\LinkShortener.Domain.csproj.CoreCompileInputs.cache
+F:\ShortUrlApp\LinkShortener\LinkShortener.Domain\obj\Debug\net6.0\LinkShortener.Domain.dll
+F:\ShortUrlApp\LinkShortener\LinkShortener.Domain\obj\Debug\net6.0\refint\LinkShortener.Domain.dll
+F:\ShortUrlApp\LinkShortener\LinkShortener.Domain\obj\Debug\net6.0\LinkShortener.Domain.pdb
+F:\ShortUrlApp\LinkShortener\LinkShortener.Domain\obj\Debug\net6.0\ref\LinkShortener.Domain.dll

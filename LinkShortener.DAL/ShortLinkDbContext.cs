@@ -1,4 +1,4 @@
-﻿using LinkShortener.DAL.Models;
+﻿using LinkShortener.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 
 #nullable disable

@@ -1,10 +1,9 @@
 using AutoFixture;
 using LinkShortener.DAL.Interfaces;
-using LinkShortener.DAL.Models;
+using LinkShortener.Domain.Models;
 using LinkShortener.DAL.Repositories;
-using LinkShortener.DAL.ViewModels;
+using LinkShortener.Domain.ViewModels;
 using LinkShortener.Service.Services;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Moq;
 using MockQueryable.Moq;

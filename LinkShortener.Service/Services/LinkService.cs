@@ -1,11 +1,15 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
+using System.Xml.Linq;
 using HashidsNet;
 using LinkShortener.DAL.Interfaces;
-using LinkShortener.DAL.Models;
-using LinkShortener.DAL.ViewModels;
+using LinkShortener.Domain.Models;
+using LinkShortener.Domain.Response;
+using LinkShortener.Domain.ViewModels;
 using LinkShortener.Service.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace LinkShortener.Service.Services;
 
@@ -21,7 +25,7 @@ public class LinkService : ILinkService
         _linkRepository = linkRepository;
     }
 
-    public async Task<bool> DeleteLinkAsync(int id)
+    public async Task<Response<bool>> DeleteLinkAsync(int id)
     {
         try
         {
@@ -29,32 +33,56 @@ public class LinkService : ILinkService
 
             if (link == null)
             {
-                return false;
+                return new Response<bool>
+                {
+                    Data = false,
+                    Message = $"Not found link with id equal to {id}.",
+                    StatusCode = Domain.Enums.StatusCode.NotFound
+                };
             }
 
             await _linkRepository.DeleteAsync(link);
-            return true;
+            return new Response<bool>
+            {
+                Data = true,
+                StatusCode = Domain.Enums.StatusCode.Success
+            };
         }
         catch (Exception exception)
         {
-            _logger.LogError(exception, "{message}", exception.Message);
-            return false;
+            _logger.LogError(exception, "{message}.", exception.Message);
+            return new Response<bool>
+            {
+                Data = false,
+                Message = $"{exception.Message}.",
+                StatusCode = Domain.Enums.StatusCode.ServerError
+            };
         }
     }
 
-    public async Task<bool> UpdateLinkAsync(LongUrlViewModel longUrlViewModel)
+    public async Task<Response<bool>> UpdateLinkAsync(LongUrlViewModel longUrlViewModel)
     {
         try
         {
             if (longUrlViewModel.Id <= 0)
             {
-                throw new ValidationException($"Can not update element with id equal to {longUrlViewModel.Id}.");
+                return new Response<bool>
+                {
+                    Data = false,
+                    Message = $"Can not update element with id equal to { longUrlViewModel.Id }.",
+                    StatusCode = Domain.Enums.StatusCode.ValidationError
+                };
             }
             
             var linkFromDb = await _linkRepository.GetByIdAsync(longUrlViewModel.Id);
             if (linkFromDb == null)
             {
-                return false;
+                return new Response<bool> 
+                {
+                    Data = false , 
+                    Message= $"Not found link with id equal to {longUrlViewModel.Id}.", 
+                    StatusCode = Domain.Enums.StatusCode.NotFound
+                };
             }
 
             linkFromDb.LongUrl = longUrlViewModel.LongUrl;
@@ -63,55 +91,102 @@ public class LinkService : ILinkService
             linkFromDb.CountClick = longUrlViewModel.CountClick;
 
             await _linkRepository.UpdateAsync(linkFromDb);
-            return true;
+            return new Response<bool>
+            {
+                Data = true,
+                StatusCode = Domain.Enums.StatusCode.Success
+            };
         }
         catch (Exception exception)
         {
-            _logger.LogError(exception, "{message}", exception.Message);
-            return false;
+            _logger.LogError(exception, "{message}.", exception.Message);
+            return new Response<bool>
+            {
+                Data = false,
+                Message = $"{exception.Message}.",
+                StatusCode = Domain.Enums.StatusCode.ServerError
+            };
         }
     }
 
-    public async Task<List<Link>> GetLinksAsync()
+    public async Task<Response<List<Link>>> GetLinksAsync()
     {
         try
         {
             var links = await _linkRepository.GetAll().ToListAsync();
-            return links;
+            return new Response<List<Link>>
+            {
+                Data = links,
+                StatusCode = Domain.Enums.StatusCode.Success
+            };
         }
         catch (Exception exception)
         {
-            _logger.LogError(exception, "{message}", exception.Message);
-            return new List<Link>();
+            _logger.LogError(exception, "{message}.", exception.Message);
+            return new Response<List<Link>>
+            {
+                Data = new List<Link>(),
+                Message = $"{exception.Message}.",
+                StatusCode = Domain.Enums.StatusCode.ServerError
+            };
         }
     }
 
-    public async Task<Link?> GetLinkByIdAsync(int id)
+    public async Task<Response<Link>> GetLinkByIdAsync(int id)
     {
         try
         {
             if (id <= 0)
             {
-                throw new ValidationException($"Id equal to {id} does not exist.");
+                return new Response<Link>
+                {
+                    Data = null,
+                    Message = $"Id equal to {id} is invalid.",
+                    StatusCode = Domain.Enums.StatusCode.ValidationError
+                };
             }
             
             var link = await _linkRepository.GetByIdAsync(id);
-            return link;
+            if (link == null)
+            {
+                return new Response<Link>
+                {
+                    Data = null,
+                    Message = $"Link with id equal to {id} does not exist.",
+                    StatusCode = Domain.Enums.StatusCode.ValidationError
+                };
+            }
+
+            return new Response<Link>
+            {
+                Data = link,
+                StatusCode = Domain.Enums.StatusCode.Success
+            };
         }
         catch (Exception exception)
         {
-            _logger.LogError(exception, "{message}", exception.Message);
-            return null;
+            _logger.LogError(exception, "{message}.", exception.Message);
+            return new Response<Link>
+            {
+                Data = null,
+                Message = $"{exception.Message}.",
+                StatusCode = Domain.Enums.StatusCode.ServerError
+            };
         }
     }
 
-    public async Task<bool> CreateLinkAsync(LongUrlViewModel longUrlViewModel)
+    public async Task<Response<bool>> CreateLinkAsync(LongUrlViewModel longUrlViewModel)
     {
         try
         {
             if (longUrlViewModel.Id != 0)
             {
-                throw new ValidationException($"Can not create element with id equal to {longUrlViewModel.Id}.");
+                return new Response<bool>
+                {
+                    Data = false,
+                    Message = $"Can not create element with id equal to {longUrlViewModel.Id}.",
+                    StatusCode = Domain.Enums.StatusCode.ValidationError
+                };
             }
             
             var isExists = await _linkRepository.GetAll().AnyAsync(link => link.LongUrl.Equals(longUrlViewModel.LongUrl));
@@ -128,12 +203,21 @@ public class LinkService : ILinkService
                 await _linkRepository.CreateAsync(link);
             }
 
-            return true;
+            return new Response<bool>
+            {
+                Data = true,
+                StatusCode = Domain.Enums.StatusCode.Success
+            };
         }
         catch (Exception exception)
         {
-            _logger.LogError(exception, "{message}", exception.Message);
-            return false;
+            _logger.LogError(exception, "{message}.", exception.Message);
+            return new Response<bool>
+            {
+                Data = false,
+                Message = $"{exception.Message}.",
+                StatusCode = Domain.Enums.StatusCode.ServerError
+            };
         }
     }
 
@@ -150,23 +234,37 @@ public class LinkService : ILinkService
         return shortUrl;
     }
 
-    public async Task<string?> GetLongUrlByShortUrlAsync(string shortUrl)
+    public async Task<Response<string>> GetLongUrlByShortUrlAsync(string shortUrl)
     {
         try
         {
             var link = await _linkRepository.GetAll().FirstOrDefaultAsync(url => url.ShortUrl == shortUrl);
             if (link == null)
             {
-                return null;
+                return new Response<string>
+                {
+                    Data = null,
+                    Message = $"Not found long url with short url equal to {shortUrl}.",
+                    StatusCode = Domain.Enums.StatusCode.NotFound
+                };
             }
 
             await UpCountOfLinkClicksAsync(link, 1);
-            return link.LongUrl;
+            return new Response<string>
+            {
+                Data = link.LongUrl,
+                StatusCode = Domain.Enums.StatusCode.Success
+            };
         }
         catch (Exception exception)
         {
-            _logger.LogError(exception, "{message}", exception.Message);
-            return null;
+            _logger.LogError(exception, "{message}.", exception.Message);
+            return new Response<string>
+            {
+                Data = null,
+                Message = $"{exception.Message}.",
+                StatusCode = Domain.Enums.StatusCode.ServerError
+            };
         }
     }
 

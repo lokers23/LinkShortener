@@ -15,3 +15,5 @@ F:\ShortUrlApp\LinkShortener\LinkShortener.Service\obj\Debug\net6.0\LinkShortene
 F:\ShortUrlApp\LinkShortener\LinkShortener.Service\obj\Debug\net6.0\ref\LinkShortener.Service.dll
 F:\ShortUrlApp\LinkShortener\LinkShortener.Service\bin\Debug\net6.0\LinkShortener.Service.runtimeconfig.json
 F:\ShortUrlApp\LinkShortener\LinkShortener.Service\obj\Debug\net6.0\LinkShortener.Service.genruntimeconfig.cache
+F:\ShortUrlApp\LinkShortener\LinkShortener.Service\bin\Debug\net6.0\LinkShortener.Domain.dll
+F:\ShortUrlApp\LinkShortener\LinkShortener.Service\bin\Debug\net6.0\LinkShortener.Domain.pdb

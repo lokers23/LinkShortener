@@ -1,6 +1,6 @@
 using LinkShortener.DAL;
 using LinkShortener.DAL.Interfaces;
-using LinkShortener.DAL.Models;
+using LinkShortener.Domain.Models;
 using LinkShortener.DAL.Repositories;
 using LinkShortener.Service;
 using LinkShortener.Service.Interfaces;

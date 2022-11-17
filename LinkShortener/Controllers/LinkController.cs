@@ -1,4 +1,5 @@
-using LinkShortener.DAL.ViewModels;
+using LinkShortener.Domain.Response;
+using LinkShortener.Domain.ViewModels;
 using LinkShortener.Service;
 using LinkShortener.Service.Interfaces;
 using Microsoft.AspNetCore.Mvc;
@@ -27,12 +28,14 @@ namespace LinkShortener.Controllers
                 return View(longUrlViewModel);
             }
             
-            var link = await _linkService.GetLinkByIdAsync(id);
-            if (link == null)
+            var response = await _linkService.GetLinkByIdAsync(id);
+            if (response.StatusCode != Domain.Enums.StatusCode.Success)
             {
-                return BadRequest("Такого элемента не существует");
+                return BadRequest(response.Message);
             }
-            
+
+            var link = response.Data!;
+           
             longUrlViewModel.Id = link.Id;
             longUrlViewModel.LongUrl = link.LongUrl;
             longUrlViewModel.ShortUrl = link.ShortUrl;
@@ -47,19 +50,19 @@ namespace LinkShortener.Controllers
         {
             if (ModelState.IsValid)
             {
-                bool isSuccess;
+                Response<bool> response;
                 if (longUrlViewModel.Id == 0)
                 {
-                    isSuccess = await _linkService.CreateLinkAsync(longUrlViewModel);
+                    response = await _linkService.CreateLinkAsync(longUrlViewModel);
                 }
                 else
                 {
-                    isSuccess = await _linkService.UpdateLinkAsync(longUrlViewModel);
+                    response = await _linkService.UpdateLinkAsync(longUrlViewModel);
                 }
 
-                if (!isSuccess)
+                if (response.StatusCode != Domain.Enums.StatusCode.Success)
                 {
-                    return StatusCode(500);
+                    return BadRequest(response.Message);
                 }
                 
                 return RedirectToAction("Index"); 
@@ -70,10 +73,10 @@ namespace LinkShortener.Controllers
         
         public async Task<IActionResult> Delete(int id)
         {
-            var isDeleteLink = await _linkService.DeleteLinkAsync(id);
-            if (!isDeleteLink)
+            var response = await _linkService.DeleteLinkAsync(id);
+            if (response.StatusCode != Domain.Enums.StatusCode.Success)
             {
-                return BadRequest("Такого элемента не существует");
+                return BadRequest(response.Message);
             }
             
             return RedirectToAction("Index");
@@ -81,13 +84,13 @@ namespace LinkShortener.Controllers
         
         public async Task<IActionResult> RedirectToLongUrl(string url)
         {
-            var longUrl = await _linkService.GetLongUrlByShortUrlAsync(url);
-            if (string.IsNullOrEmpty(longUrl))
+            var response = await _linkService.GetLongUrlByShortUrlAsync(url);
+            if (response.StatusCode != Domain.Enums.StatusCode.Success)
             {
-                return NotFound("Такой сокращенной ссылки нет в базе данных");
+                return BadRequest(response.Message);
             }
             
-            return Redirect(longUrl);
+            return Redirect(response.Data!);
         }
     }
 }

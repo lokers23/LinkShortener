@@ -58,3 +58,5 @@ F:\ShortUrlApp\LinkShortener\LinkShortener\bin\Debug\net6.0\nlog.config
 F:\ShortUrlApp\LinkShortener\LinkShortener\bin\Debug\net6.0\NLog.dll
 F:\ShortUrlApp\LinkShortener\LinkShortener\bin\Debug\net6.0\NLog.Extensions.Logging.dll
 F:\ShortUrlApp\LinkShortener\LinkShortener\bin\Debug\net6.0\NLog.Web.AspNetCore.dll
+F:\ShortUrlApp\LinkShortener\LinkShortener\bin\Debug\net6.0\LinkShortener.Domain.dll
+F:\ShortUrlApp\LinkShortener\LinkShortener\bin\Debug\net6.0\LinkShortener.Domain.pdb
