@@ -1,4 +1,5 @@
-﻿using HashidsNet;
+﻿using System.ComponentModel.DataAnnotations;
+using HashidsNet;
 using LinkShortener.DAL.Interfaces;
 using LinkShortener.DAL.Models;
 using LinkShortener.DAL.ViewModels;
@@ -36,7 +37,7 @@ public class LinkService : ILinkService
         }
         catch (Exception exception)
         {
-            _logger.LogError(exception.Message);
+            _logger.LogError(exception, "{message}", exception.Message);
             return false;
         }
     }
@@ -45,6 +46,11 @@ public class LinkService : ILinkService
     {
         try
         {
+            if (longUrlViewModel.Id <= 0)
+            {
+                throw new ValidationException($"Can not update element with id equal to {longUrlViewModel.Id}.");
+            }
+            
             var linkFromDb = await _linkRepository.GetByIdAsync(longUrlViewModel.Id);
             if (linkFromDb == null)
             {
@@ -61,7 +67,7 @@ public class LinkService : ILinkService
         }
         catch (Exception exception)
         {
-            _logger.LogError(exception.Message);
+            _logger.LogError(exception, "{message}", exception.Message);
             return false;
         }
     }
@@ -75,7 +81,7 @@ public class LinkService : ILinkService
         }
         catch (Exception exception)
         {
-            _logger.LogError(exception.Message);
+            _logger.LogError(exception, "{message}", exception.Message);
             return new List<Link>();
         }
     }
@@ -84,12 +90,17 @@ public class LinkService : ILinkService
     {
         try
         {
+            if (id <= 0)
+            {
+                throw new ValidationException($"Id equal to {id} does not exist.");
+            }
+            
             var link = await _linkRepository.GetByIdAsync(id);
             return link;
         }
         catch (Exception exception)
         {
-            _logger.LogError(exception.Message);
+            _logger.LogError(exception, "{message}", exception.Message);
             return null;
         }
     }
@@ -98,6 +109,11 @@ public class LinkService : ILinkService
     {
         try
         {
+            if (longUrlViewModel.Id != 0)
+            {
+                throw new ValidationException($"Can not create element with id equal to {longUrlViewModel.Id}.");
+            }
+            
             var isExists = await _linkRepository.GetAll().AnyAsync(link => link.LongUrl.Equals(longUrlViewModel.LongUrl));
             if (!isExists)
             {
@@ -116,7 +132,7 @@ public class LinkService : ILinkService
         }
         catch (Exception exception)
         {
-            _logger.LogError(exception.Message);
+            _logger.LogError(exception, "{message}", exception.Message);
             return false;
         }
     }
@@ -149,7 +165,7 @@ public class LinkService : ILinkService
         }
         catch (Exception exception)
         {
-            _logger.LogError(exception.Message);
+            _logger.LogError(exception, "{message}", exception.Message);
             return null;
         }
     }

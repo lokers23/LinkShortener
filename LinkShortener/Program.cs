@@ -14,13 +14,14 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Logging.ClearProviders();
 builder.Host.UseNLog();
-
+builder.Services.AddCors();
 builder.Services.AddDbContext<ShortLinkDbContext>();
 
 builder.Services.AddScoped<IRepository<Link>, LinkRepository>();
 builder.Services.AddScoped<ILinkService, LinkService>();
 
 var app = builder.Build();
+
 
 using (var scope = app.Services.CreateScope())
 {
@@ -36,6 +37,10 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+app.UseCors(c => c.AllowAnyHeader()
+    .AllowAnyMethod()
+    .WithOrigins("http://localhost:3000"));
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
@@ -48,7 +53,7 @@ app.UseEndpoints( _ =>
     app.MapControllerRoute(
         name: "default",
         pattern: "{controller=Link}/{action=Index}/{id?}");
-    
+
     app.MapControllerRoute(
         name: "shortUrl",
         pattern: "{url}",
