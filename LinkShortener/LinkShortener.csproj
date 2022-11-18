@@ -28,4 +28,9 @@
       <PackageReference Include="NLog.Web.AspNetCore" Version="5.1.4" />
     </ItemGroup>
 
+	<ItemGroup>
+		<InternalsVisibleTo Include="..\LinkShortener.Service.IntegrationTests\LinkShortener.Service.IntegrationTests.csproj" />
+	</ItemGroup>
+
+
 </Project>

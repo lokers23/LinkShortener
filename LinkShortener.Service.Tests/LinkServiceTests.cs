@@ -7,6 +7,7 @@ using LinkShortener.Service.Services;
 using Microsoft.Extensions.Logging;
 using Moq;
 using MockQueryable.Moq;
+using LinkShortener.Domain.Response;
 
 namespace LinkShortener.Service.Tests;
 
@@ -24,7 +25,7 @@ public class LinkServiceTests
     }
     
     [Fact]
-    public async Task Create_ShouldGetLinkById()
+    public async Task GetLinkByIdAsync_ShouldCallGetLinkById()
     {
         //Arrange
         const int linkId = 1;
@@ -47,10 +48,10 @@ public class LinkServiceTests
         _service = new LinkService(_loggerMock.Object, _linkRepositoryMock.Object);
         
         //Act
-        var result = await _service.GetLinkByIdAsync(link.Id);
+        var response = await _service.GetLinkByIdAsync(link.Id);
         
         //Assert
-        Assert.IsType<Link?>(result);
+        Assert.IsType<Link>(response.Data);
     }
     
     [Fact]
@@ -63,10 +64,10 @@ public class LinkServiceTests
         _service = new LinkService(_loggerMock.Object, _linkRepositoryMock.Object);
         
         //Act
-        var result = await _service.GetLinkByIdAsync(link.Id);
+        var response = await _service.GetLinkByIdAsync(link.Id);
         
         //Assert
-        Assert.Null(result);
+        Assert.Null(response.Data);
     }
 
     [Fact]
@@ -79,10 +80,10 @@ public class LinkServiceTests
         _service = new LinkService(_loggerMock.Object, _linkRepositoryMock.Object);
         
         //Act
-        var result = await _service.GetLinksAsync();
+        var response = await _service.GetLinksAsync();
 
         //Assert
-        Assert.Equal(result.Count, links.Count());
+        Assert.Equal(response.Data?.Count, links.Count());
     }
     
     [Fact]
@@ -93,10 +94,10 @@ public class LinkServiceTests
         _service = new LinkService(_loggerMock.Object, _linkRepositoryMock.Object);
         
         //Act
-        var result = await _service.GetLinksAsync();
+        var response = await _service.GetLinksAsync();
 
         //Assert
-        Assert.Empty(result);
+        Assert.Empty(response.Data);
     }
 
     [Fact]
@@ -111,10 +112,10 @@ public class LinkServiceTests
         _service = new LinkService(_loggerMock.Object, _linkRepositoryMock.Object);
         
         //Act
-        var result = await _service.DeleteLinkAsync(someId);
+        var response = await _service.DeleteLinkAsync(someId);
         
         //Assert
-        Assert.True(result);
+        Assert.True(response.Data);
     }
     
     [Fact]
@@ -128,10 +129,10 @@ public class LinkServiceTests
         _service = new LinkService(_loggerMock.Object, _linkRepositoryMock.Object);
         
         //Act
-        var result = await _service.DeleteLinkAsync(someId);
+        var response = await _service.DeleteLinkAsync(someId);
         
         //Assert
-        Assert.False(result);
+        Assert.False(response.Data);
     }
     
     [Fact]
@@ -144,10 +145,10 @@ public class LinkServiceTests
         _service = new LinkService(_loggerMock.Object, _linkRepositoryMock.Object);
         
         //Act
-        var result = await _service.DeleteLinkAsync(someId);
+        var response = await _service.DeleteLinkAsync(someId);
         
         //Assert
-        Assert.False(result);
+        Assert.False(response.Data);
     }
 
     [Fact]
@@ -160,10 +161,10 @@ public class LinkServiceTests
         _service = new LinkService(_loggerMock.Object, _linkRepositoryMock.Object);
         
         //Act
-        var result = await _service.CreateLinkAsync(longUrlViewModel);
+        var response = await _service.CreateLinkAsync(longUrlViewModel);
         
         //Assert
-        Assert.False(result);
+        Assert.False(response.Data);
     }
     
     [Fact]
@@ -171,26 +172,42 @@ public class LinkServiceTests
     {
         //Arrange
         const string longUrl = "https://longurl/";
-        var longUrlViewModel = _fixture.Build<LongUrlViewModel>().Do(x => x.LongUrl = longUrl).Create();
-        var link = _fixture.Build<Link>().Do(x => x.LongUrl = longUrl).Create();
-        var links = _fixture.CreateMany<Link>().AsQueryable().Append(link).BuildMock();
+        var longUrlViewModel = _fixture.Build<LongUrlViewModel>()
+            .With(x => x.LongUrl, longUrl)
+            .With(x => x.Id, 0)
+            .Create();
+
+        var link = _fixture.Build<Link>()
+            .With(x => x.LongUrl, longUrl)
+            .Create();
+
+        var links = _fixture.CreateMany<Link>()
+            .AsQueryable()
+            .Append(link)
+            .BuildMock();
 
         _linkRepositoryMock.Setup(rep => rep.GetAll()).Returns(links);
         _service = new LinkService(_loggerMock.Object, _linkRepositoryMock.Object);
         
         //Act
-        var result = await _service.CreateLinkAsync(longUrlViewModel);
+        var response = await _service.CreateLinkAsync(longUrlViewModel);
         
         //Assert
-        _linkRepositoryMock.Verify(rep => rep.CreateAsync(link), Times.Never);
-        Assert.True(result);
+        _linkRepositoryMock.Verify(rep => rep.CreateAsync(It.IsAny<Link>()), Times.Never);
+        Assert.True(response.Data);
     }
+
     [Fact]
     public async Task Create_LongUrlViewModelNotExistsLink_ShouldReturnTrue()
     {
         //Arrange
-        var longUrlViewModel = _fixture.Build<LongUrlViewModel>().Create();
-        var links = _fixture.CreateMany<Link>().AsQueryable().BuildMock();
+        var longUrlViewModel = _fixture.Build<LongUrlViewModel>()
+            .With(x => x.Id, 0)
+            .Create();
+
+        var links = _fixture.CreateMany<Link>()
+            .AsQueryable()
+            .BuildMock();
 
         _linkRepositoryMock.Setup(rep => rep.GetAll()).Returns(links);
         _linkRepositoryMock.Setup(rep=>rep.CreateAsync(It.IsAny<Link>()));
@@ -198,11 +215,11 @@ public class LinkServiceTests
         _service = new LinkService(_loggerMock.Object, _linkRepositoryMock.Object);
 
         //Act
-        var result = await _service.CreateLinkAsync(longUrlViewModel);
+        var response = await _service.CreateLinkAsync(longUrlViewModel);
         
         //Assert
         _linkRepositoryMock.Verify(rep => rep.CreateAsync(It.IsAny<Link>()), Times.Once);
-        Assert.True(result);
+        Assert.True(response.Data);
     }
     
 }

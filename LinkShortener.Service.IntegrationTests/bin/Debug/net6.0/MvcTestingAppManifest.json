@@ -1,0 +1,6 @@
+{
+  "LinkShortener.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "F:\\ShortUrlApp\\LinkShortener\\LinkShortener.DAL",
+  "LinkShortener, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "F:\\ShortUrlApp\\LinkShortener\\LinkShortener",
+  "LinkShortener.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "F:\\ShortUrlApp\\LinkShortener\\LinkShortener.Domain",
+  "LinkShortener.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "F:\\ShortUrlApp\\LinkShortener\\LinkShortener.Service"
+}

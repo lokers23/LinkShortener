@@ -1558,10 +1558,16 @@
       "xunit.runner.visualstudio/2.4.3": {},
       "LinkShortener.DAL/1.0.0": {
         "dependencies": {
+          "LinkShortener.Domain": "1.0.0",
           "MySql.EntityFrameworkCore": "5.0.17"
         },
         "runtime": {
           "LinkShortener.DAL.dll": {}
+        }
+      },
+      "LinkShortener.Domain/1.0.0": {
+        "runtime": {
+          "LinkShortener.Domain.dll": {}
         }
       },
       "LinkShortener.Service/1.0.0": {
@@ -2527,6 +2533,11 @@
       "hashPath": "xunit.runner.visualstudio.2.4.3.nupkg.sha512"
     },
     "LinkShortener.DAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LinkShortener.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

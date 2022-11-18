@@ -26,7 +26,10 @@ var app = builder.Build();
 using (var scope = app.Services.CreateScope())
 {
     var dataContext = scope.ServiceProvider.GetRequiredService<ShortLinkDbContext>();
-    dataContext.Database.Migrate();
+    if (dataContext.Database.IsRelational())
+    {
+        dataContext.Database.Migrate();
+    }
 }
 
 // Configure the HTTP request pipeline.
@@ -61,3 +64,6 @@ app.UseEndpoints( _ =>
 });
 
 app.Run();
+
+
+public partial class Program { }

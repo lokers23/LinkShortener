@@ -144,3 +144,5 @@ F:\ShortUrlApp\LinkShortener\LinkShortener.Service.Tests\obj\Debug\net6.0\ref\Li
 F:\ShortUrlApp\LinkShortener\LinkShortener.Service.Tests\bin\Debug\net6.0\MockQueryable.Core.dll
 F:\ShortUrlApp\LinkShortener\LinkShortener.Service.Tests\bin\Debug\net6.0\MockQueryable.EntityFrameworkCore.dll
 F:\ShortUrlApp\LinkShortener\LinkShortener.Service.Tests\bin\Debug\net6.0\MockQueryable.Moq.dll
+F:\ShortUrlApp\LinkShortener\LinkShortener.Service.Tests\bin\Debug\net6.0\LinkShortener.Domain.dll
+F:\ShortUrlApp\LinkShortener\LinkShortener.Service.Tests\bin\Debug\net6.0\LinkShortener.Domain.pdb
