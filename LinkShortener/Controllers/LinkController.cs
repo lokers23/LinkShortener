@@ -16,7 +16,7 @@ namespace LinkShortener.Controllers
         public async Task<IActionResult> Index()
         {
             var links = await _linkService.GetLinksAsync();
-            return View(links);
+            return View(links.Data);
         }
 
         [HttpGet]
